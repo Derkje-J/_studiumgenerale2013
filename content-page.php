@@ -2,8 +2,8 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package _s
- * @since _s 1.0
+ * @package Studium Generale 2013
+ * @since Studium Generale 2013 1.0
  */
 ?>
 
@@ -14,7 +14,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'sg2013' ), 'after' => '</div>' ) ); ?>
+		<?php edit_post_link( __( 'Edit', 'sg2013' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
