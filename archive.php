@@ -4,8 +4,8 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
- * @since _s 1.0
+ * @package Studium Generale 2013
+ * @since Studium Generale 2013 1.0
  */
 
 get_header(); ?>
