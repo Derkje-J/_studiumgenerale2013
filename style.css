@@ -19,7 +19,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 /* =Reset
 -------------------------------------------------------------- */
-/* line 11, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 11, scss/mixin/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +39,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 22, scss/mixin/_reset.scss */
 html {
   font-size: 100%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -51,12 +51,13 @@ html {
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
-/* line 28, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 28, scss/mixin/_reset.scss */
 body {
   background: #fff;
+  line-height: 1;
 }
 
-/* line 40, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 42, scss/mixin/_reset.scss */
 article,
 aside,
 details,
@@ -65,61 +66,255 @@ figure,
 footer,
 header,
 hgroup,
+menu,
 nav,
 section {
   display: block;
 }
 
-/* line 43, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 45, scss/mixin/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 46, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 48, scss/mixin/_reset.scss */
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 50, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 52, scss/mixin/_reset.scss */
 caption, th, td {
   font-weight: normal;
   text-align: left;
 }
 
-/* line 55, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 57, scss/mixin/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
+  content: none;
 }
 
-/* line 58, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 61, scss/mixin/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 61, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 64, scss/mixin/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 65, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 68, scss/mixin/_reset.scss */
 a:hover,
 a:active {
   /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
   outline: 0;
 }
 
-/* line 68, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
+/* line 71, scss/mixin/_reset.scss */
 a img {
   border: 0;
 }
 
 /* CSS Document */
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+/* line 5, scss/grid/_1140.scss */
+.container, .site-main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 10, scss/grid/_1140.scss */
+.row, .content-area {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 18, scss/grid/_1140.scss */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px;
+}
+
+/* line 24, scss/grid/_1140.scss */
+.row .onecol, .content-area .onecol {
+  width: 4.85%;
+}
+
+/* line 28, scss/grid/_1140.scss */
+.row .twocol, .content-area .twocol {
+  width: 13.45%;
+}
+
+/* line 32, scss/grid/_1140.scss */
+.row .threecol, .content-area .threecol {
+  width: 22.05%;
+}
+
+/* line 36, scss/grid/_1140.scss */
+.row .fourcol, .content-area .fourcol {
+  width: 30.75%;
+}
+
+/* line 40, scss/grid/_1140.scss */
+.row .fivecol, .content-area .fivecol {
+  width: 39.45%;
+}
+
+/* line 44, scss/grid/_1140.scss */
+.row .sixcol, .content-area .sixcol {
+  width: 48%;
+}
+
+/* line 48, scss/grid/_1140.scss */
+.row .sevencol, .content-area .sevencol {
+  width: 56.75%;
+}
+
+/* line 52, scss/grid/_1140.scss */
+.row .eightcol, .content-area .eightcol {
+  width: 65.4%;
+}
+
+/* line 56, scss/grid/_1140.scss */
+.row .ninecol, .content-area .ninecol {
+  width: 74.05%;
+}
+
+/* line 60, scss/grid/_1140.scss */
+.row .tencol, .content-area .tencol {
+  width: 82.7%;
+}
+
+/* line 64, scss/grid/_1140.scss */
+.row .elevencol, .content-area .elevencol {
+  width: 91.35%;
+}
+
+/* line 68, scss/grid/_1140.scss */
+.row .twelvecol, .content-area .twelvecol {
+  width: 100%;
+  float: left;
+}
+
+/* line 73, scss/grid/_1140.scss */
+.last {
+  margin-right: 0px;
+}
+
+/* line 77, scss/grid/_1140.scss */
+img, object, embed {
+  max-width: 100%;
+}
+
+/* line 81, scss/grid/_1140.scss */
+img {
+  height: auto;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  /* line 90, scss/grid/_1140.scss */
+  body {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  /* line 102, scss/grid/_1140.scss */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 107, scss/grid/_1140.scss */
+  .row, .content-area, body, .container, .site-main {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 116, scss/grid/_1140.scss */
+  .row .onecol, .content-area .onecol, .row .twocol, .content-area .twocol, .row .threecol, .content-area .threecol, .row .fourcol, .content-area .fourcol, .row .fivecol, .content-area .fivecol, .row .sixcol, .content-area .sixcol, .row .sevencol, .content-area .sevencol, .row .eightcol, .content-area .eightcol, .row .ninecol, .content-area .ninecol, .row .tencol, .content-area .tencol, .row .elevencol, .content-area .elevencol, .row .twelvecol, .content-area .twelvecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* line 1, scss/grid/_1140.ie.scss */
+.ie .row .onecol, .ie .content-area .onecol {
+  width: 4.7%;
+}
+
+/* line 5, scss/grid/_1140.ie.scss */
+.ie .row .twocol, .ie .content-area .twocol {
+  width: 13.2%;
+}
+
+/* line 9, scss/grid/_1140.ie.scss */
+.ie .row .threecol, .ie .content-area .threecol {
+  width: 22.05%;
+}
+
+/* line 13, scss/grid/_1140.ie.scss */
+.ie .row .fourcol, .ie .content-area .fourcol {
+  width: 30.6%;
+}
+
+/* line 17, scss/grid/_1140.ie.scss */
+.ie .row .fivecol, .ie .content-area .fivecol {
+  width: 39%;
+}
+
+/* line 21, scss/grid/_1140.ie.scss */
+.ie .row .sixcol, .ie .content-area .sixcol {
+  width: 48%;
+}
+
+/* line 25, scss/grid/_1140.ie.scss */
+.ie .row .sevencol, .ie .content-area .sevencol {
+  width: 56.75%;
+}
+
+/* line 29, scss/grid/_1140.ie.scss */
+.ie .row .eightcol, .ie .content-area .eightcol {
+  width: 61.6%;
+}
+
+/* line 33, scss/grid/_1140.ie.scss */
+.ie .row .ninecol, .ie .content-area .ninecol {
+  width: 74.05%;
+}
+
+/* line 37, scss/grid/_1140.ie.scss */
+.ie .row .tencol, .ie .content-area .tencol {
+  width: 82%;
+}
+
+/* line 41, scss/grid/_1140.ie.scss */
+.ie .row .elevencol, .ie .content-area .elevencol {
+  width: 91.35%;
+}
+
 /* =Global
 ----------------------------------------------- */
-/* line 31, scss/style.scss */
+/* line 34, scss/style.scss */
 body,
 button,
 input,
@@ -133,12 +328,12 @@ textarea {
 }
 
 /* Headings */
-/* line 40, scss/style.scss */
+/* line 43, scss/style.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 43, scss/style.scss */
+/* line 46, scss/style.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -147,63 +342,63 @@ hr {
 }
 
 /* Text elements */
-/* line 51, scss/style.scss */
+/* line 54, scss/style.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 54, scss/style.scss */
+/* line 57, scss/style.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 57, scss/style.scss */
+/* line 60, scss/style.scss */
 ul {
   list-style: disc;
 }
 
-/* line 60, scss/style.scss */
+/* line 63, scss/style.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 63, scss/style.scss */
+/* line 66, scss/style.scss */
 ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 67, scss/style.scss */
+/* line 70, scss/style.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 70, scss/style.scss */
+/* line 73, scss/style.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 73, scss/style.scss */
+/* line 76, scss/style.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 76, scss/style.scss */
+/* line 79, scss/style.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 79, scss/style.scss */
+/* line 82, scss/style.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 82, scss/style.scss */
+/* line 85, scss/style.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 85, scss/style.scss */
+/* line 88, scss/style.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -216,24 +411,24 @@ pre {
   max-width: 100%;
 }
 
-/* line 96, scss/style.scss */
+/* line 99, scss/style.scss */
 code, kbd, tt, var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 99, scss/style.scss */
+/* line 102, scss/style.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 103, scss/style.scss */
+/* line 106, scss/style.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 108, scss/style.scss */
+/* line 111, scss/style.scss */
 sup,
 sub {
   font-size: 75%;
@@ -243,43 +438,43 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 115, scss/style.scss */
+/* line 118, scss/style.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 118, scss/style.scss */
+/* line 121, scss/style.scss */
 sub {
   top: .5ex;
 }
 
-/* line 121, scss/style.scss */
+/* line 124, scss/style.scss */
 small {
   font-size: 75%;
 }
 
-/* line 124, scss/style.scss */
+/* line 127, scss/style.scss */
 big {
   font-size: 125%;
 }
 
-/* line 127, scss/style.scss */
+/* line 130, scss/style.scss */
 figure {
   margin: 0;
 }
 
-/* line 130, scss/style.scss */
+/* line 133, scss/style.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 134, scss/style.scss */
+/* line 137, scss/style.scss */
 th {
   font-weight: bold;
 }
 
-/* line 140, scss/style.scss */
+/* line 143, scss/style.scss */
 button,
 input,
 select,
@@ -294,7 +489,7 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-/* line 147, scss/style.scss */
+/* line 150, scss/style.scss */
 button,
 input {
   line-height: normal;
@@ -303,7 +498,7 @@ input {
   /* Corrects inner spacing displayed oddly in IE6/7 */
 }
 
-/* line 154, scss/style.scss */
+/* line 157, scss/style.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -321,13 +516,13 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
   font-size: 12px;
-  font-size: 1.4rem;
+  font-size: 0.75rem;
   line-height: 1;
   padding: 1.12em 1.5em 1em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 174, scss/style.scss */
+/* line 177, scss/style.scss */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -338,7 +533,7 @@ input[type="submit"]:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
-/* line 187, scss/style.scss */
+/* line 191, scss/style.scss */
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -353,7 +548,7 @@ input[type="submit"]:active {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* line 194, scss/style.scss */
+/* line 198, scss/style.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -362,7 +557,7 @@ input[type="radio"] {
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 198, scss/style.scss */
+/* line 202, scss/style.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -372,13 +567,13 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 204, scss/style.scss */
+/* line 208, scss/style.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 208, scss/style.scss */
+/* line 212, scss/style.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -386,7 +581,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 214, scss/style.scss */
+/* line 218, scss/style.scss */
 input[type=text],
 input[type=email],
 textarea {
@@ -395,20 +590,20 @@ textarea {
   border-radius: 3px;
 }
 
-/* line 221, scss/style.scss */
+/* line 225, scss/style.scss */
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
   color: #111;
 }
 
-/* line 225, scss/style.scss */
+/* line 229, scss/style.scss */
 input[type=text],
 input[type=email] {
   padding: 3px;
 }
 
-/* line 228, scss/style.scss */
+/* line 232, scss/style.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -419,17 +614,17 @@ textarea {
 }
 
 /* Links */
-/* line 236, scss/style.scss */
+/* line 240, scss/style.scss */
 a {
   color: royalblue;
 }
 
-/* line 239, scss/style.scss */
+/* line 243, scss/style.scss */
 a:visited {
   color: purple;
 }
 
-/* line 244, scss/style.scss */
+/* line 248, scss/style.scss */
 a:hover,
 a:focus,
 a:active {
@@ -437,21 +632,21 @@ a:active {
 }
 
 /* Alignment */
-/* line 249, scss/style.scss */
+/* line 253, scss/style.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 254, scss/style.scss */
+/* line 258, scss/style.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 259, scss/style.scss */
+/* line 263, scss/style.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -459,7 +654,7 @@ a:active {
 }
 
 /* Text meant only for screen readers */
-/* line 266, scss/style.scss */
+/* line 270, scss/style.scss */
 .assistive-text {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -467,9 +662,18 @@ a:active {
   position: absolute !important;
 }
 
+/* line 276, scss/style.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 24px;
+  margin-bottom: 1.714285714rem;
+}
+
 /* =Menu
 ----------------------------------------------- */
-/* line 276, scss/style.scss */
+/* line 4, scss/sections/_menu.scss */
 .main-navigation {
   clear: both;
   display: block;
@@ -477,26 +681,26 @@ a:active {
   width: 100%;
 }
 
-/* line 282, scss/style.scss */
+/* line 10, scss/sections/_menu.scss */
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 287, scss/style.scss */
+/* line 15, scss/sections/_menu.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
 
-/* line 291, scss/style.scss */
+/* line 19, scss/sections/_menu.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* line 295, scss/style.scss */
+/* line 23, scss/sections/_menu.scss */
 .main-navigation ul ul {
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -509,63 +713,63 @@ a:active {
   z-index: 99999;
 }
 
-/* line 306, scss/style.scss */
+/* line 34, scss/sections/_menu.scss */
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
 }
 
-/* line 310, scss/style.scss */
+/* line 38, scss/sections/_menu.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 321, scss/style.scss */
+/* line 49, scss/sections/_menu.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
 
 /* Small menu */
-/* line 329, scss/style.scss */
+/* line 57, scss/sections/_menu.scss */
 .menu-toggle {
   cursor: pointer;
 }
 
-/* line 332, scss/style.scss */
+/* line 60, scss/sections/_menu.scss */
 .main-small-navigation .menu {
   display: none;
 }
 
 /* =Content
 ----------------------------------------------- */
-/* line 342, scss/style.scss */
+/* line 6, scss/sections/_content.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 345, scss/style.scss */
+/* line 9, scss/sections/_content.scss */
 .entry-meta {
   clear: both;
 }
 
-/* line 348, scss/style.scss */
+/* line 12, scss/sections/_content.scss */
 .byline {
   display: none;
 }
 
-/* line 352, scss/style.scss */
+/* line 16, scss/sections/_content.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 356, scss/style.scss */
+/* line 20, scss/sections/_content.scss */
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 359, scss/style.scss */
+/* line 23, scss/sections/_content.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -573,7 +777,7 @@ a:active {
 
 /* =Asides
 ----------------------------------------------- */
-/* line 369, scss/style.scss */
+/* line 5, scss/sections/_aside.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -581,7 +785,7 @@ a:active {
 
 /* =Media
 ----------------------------------------------- */
-/* line 380, scss/style.scss */
+/* line 7, scss/sections/_media.scss */
 .site-header img,
 .entry-content img,
 .comment-content img,
@@ -590,7 +794,7 @@ a:active {
   /* Fluid images for posts, comments, and widgets */
 }
 
-/* line 386, scss/style.scss */
+/* line 13, scss/sections/_media.scss */
 .site-header img,
 .entry-content img,
 img[class*="align"],
@@ -599,7 +803,7 @@ img[class*="wp-image-"] {
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 
-/* line 391, scss/style.scss */
+/* line 18, scss/sections/_media.scss */
 .site-header img,
 .entry-content img,
 img.size-full {
@@ -608,7 +812,7 @@ img.size-full {
   /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 
-/* line 396, scss/style.scss */
+/* line 23, scss/sections/_media.scss */
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
   border: none;
@@ -617,55 +821,55 @@ img.size-full {
   padding: 0;
 }
 
-/* line 402, scss/style.scss */
+/* line 29, scss/sections/_media.scss */
 .wp-caption {
   border: 1px solid #ccc;
   max-width: 100%;
 }
 
-/* line 408, scss/style.scss */
+/* line 35, scss/sections/_media.scss */
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
 .wp-caption.alignright {
   margin-bottom: 1.5em;
 }
 
-/* line 411, scss/style.scss */
+/* line 38, scss/sections/_media.scss */
 .wp-caption img {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
 
-/* line 416, scss/style.scss */
+/* line 43, scss/sections/_media.scss */
 .wp-caption-text {
   text-align: center;
 }
 
-/* line 419, scss/style.scss */
+/* line 46, scss/sections/_media.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 422, scss/style.scss */
+/* line 49, scss/sections/_media.scss */
 .site-content .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 427, scss/style.scss */
+/* line 54, scss/sections/_media.scss */
 .site-content .gallery a img {
   border: none;
   height: auto;
   max-width: 90%;
 }
 
-/* line 432, scss/style.scss */
+/* line 59, scss/sections/_media.scss */
 .site-content .gallery dd {
   margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 443, scss/style.scss */
+/* line 70, scss/sections/_media.scss */
 embed,
 iframe,
 object {
@@ -674,19 +878,19 @@ object {
 
 /* =Navigation
 ----------------------------------------------- */
-/* line 451, scss/style.scss */
+/* line 5, scss/sections/_navigation.scss */
 .site-content .site-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 
-/* line 455, scss/style.scss */
+/* line 9, scss/sections/_navigation.scss */
 .site-content .nav-previous {
   float: left;
   width: 50%;
 }
 
-/* line 459, scss/style.scss */
+/* line 13, scss/sections/_navigation.scss */
 .site-content .nav-next {
   float: right;
   text-align: right;
@@ -697,13 +901,13 @@ object {
 ----------------------------------------------- */
 /* =Widgets
 ----------------------------------------------- */
-/* line 474, scss/style.scss */
+/* line 4, scss/sections/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
 }
 
 /* Search widget */
-/* line 479, scss/style.scss */
+/* line 9, scss/sections/_widgets.scss */
 #searchsubmit {
   display: none;
 }
