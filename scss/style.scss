@@ -281,18 +281,39 @@ hr {
 	margin-bottom: 1.714285714rem;
 }
 
-.content-area {
-	@extend .row;	
-}
-
-.site-main {
+/* Add the grid to the wordpress default classes */
+.site {
 	@extend .container;	
 }
 
-.content-area {
+.site-header, .site-main, .site-footer {
 	@extend .row;	
 }
 
+.site-header, .site-footer {
+	@extend .twelvecol;
+	
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.site-header, .site-footer {
+		@extend .mobile-col;
+	}
+}
+
+.content-area {
+	@extend .eightcol;	
+}
+
+.widget-area {
+	@extend .fourcol;	
+	@extend .last;
+}
+
+/* Mobile */
+
+
+/* Import the sections */
 @import "sections/menu";
 @import "sections/content";
 @import "sections/aside";

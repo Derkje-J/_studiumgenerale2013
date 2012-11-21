@@ -124,13 +124,13 @@ a img {
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
 /* line 5, scss/grid/_1140.scss */
-.container, .site-main {
+.container, .site {
   padding-left: 20px;
   padding-right: 20px;
 }
 
 /* line 10, scss/grid/_1140.scss */
-.row, .content-area {
+.row, .site-header, .site-main, .site-footer {
   width: 100%;
   max-width: 1140px;
   min-width: 755px;
@@ -139,91 +139,90 @@ a img {
 }
 
 /* line 18, scss/grid/_1140.scss */
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+.onecol, .twocol, .threecol, .fourcol, .widget-area, .fivecol, .sixcol, .sevencol, .eightcol, .content-area, .ninecol, .tencol, .elevencol {
   margin-right: 3.8%;
   float: left;
   min-height: 1px;
 }
 
 /* line 24, scss/grid/_1140.scss */
-.row .onecol, .content-area .onecol {
+.row .onecol, .site-header .onecol, .site-main .onecol, .site-footer .onecol {
   width: 4.85%;
 }
 
 /* line 28, scss/grid/_1140.scss */
-.row .twocol, .content-area .twocol {
+.row .twocol, .site-header .twocol, .site-main .twocol, .site-footer .twocol {
   width: 13.45%;
 }
 
 /* line 32, scss/grid/_1140.scss */
-.row .threecol, .content-area .threecol {
+.row .threecol, .site-header .threecol, .site-main .threecol, .site-footer .threecol {
   width: 22.05%;
 }
 
 /* line 36, scss/grid/_1140.scss */
-.row .fourcol, .content-area .fourcol {
+.row .fourcol, .site-header .fourcol, .site-main .fourcol, .site-footer .fourcol, .row .widget-area, .site-header .widget-area, .site-main .widget-area, .site-footer .widget-area {
   width: 30.75%;
 }
 
 /* line 40, scss/grid/_1140.scss */
-.row .fivecol, .content-area .fivecol {
+.row .fivecol, .site-header .fivecol, .site-main .fivecol, .site-footer .fivecol {
   width: 39.45%;
 }
 
 /* line 44, scss/grid/_1140.scss */
-.row .sixcol, .content-area .sixcol {
+.row .sixcol, .site-header .sixcol, .site-main .sixcol, .site-footer .sixcol {
   width: 48%;
 }
 
 /* line 48, scss/grid/_1140.scss */
-.row .sevencol, .content-area .sevencol {
+.row .sevencol, .site-header .sevencol, .site-main .sevencol, .site-footer .sevencol {
   width: 56.75%;
 }
 
 /* line 52, scss/grid/_1140.scss */
-.row .eightcol, .content-area .eightcol {
+.row .eightcol, .site-header .eightcol, .site-main .eightcol, .site-footer .eightcol, .row .content-area, .site-header .content-area, .site-main .content-area, .site-footer .content-area {
   width: 65.4%;
 }
 
 /* line 56, scss/grid/_1140.scss */
-.row .ninecol, .content-area .ninecol {
+.row .ninecol, .site-header .ninecol, .site-main .ninecol, .site-footer .ninecol {
   width: 74.05%;
 }
 
 /* line 60, scss/grid/_1140.scss */
-.row .tencol, .content-area .tencol {
+.row .tencol, .site-header .tencol, .site-main .tencol, .site-footer .tencol {
   width: 82.7%;
 }
 
 /* line 64, scss/grid/_1140.scss */
-.row .elevencol, .content-area .elevencol {
+.row .elevencol, .site-header .elevencol, .site-main .elevencol, .site-footer .elevencol {
   width: 91.35%;
 }
 
 /* line 68, scss/grid/_1140.scss */
-.row .twelvecol, .content-area .twelvecol {
+.row .twelvecol, .site-header .twelvecol, .site-main .twelvecol, .site-footer .twelvecol, .row .site-header, .site-header .site-header, .site-main .site-header, .site-footer .site-header, .row .site-footer, .site-header .site-footer, .site-main .site-footer, .site-footer .site-footer, .twelvecol, .site-header, .site-footer {
   width: 100%;
-  float: left;
 }
 
-/* line 73, scss/grid/_1140.scss */
-.last {
+/* line 72, scss/grid/_1140.scss */
+.last, .widget-area {
   margin-right: 0px;
 }
 
-/* line 77, scss/grid/_1140.scss */
+/* line 76, scss/grid/_1140.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 81, scss/grid/_1140.scss */
+/* line 80, scss/grid/_1140.scss */
 img {
   height: auto;
 }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
-  /* line 90, scss/grid/_1140.scss */
+  /* line 89, scss/grid/_1140.scss */
   body {
     font-size: 0.8em;
     line-height: 1.5em;
@@ -231,14 +230,14 @@ img {
 }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
-  /* line 102, scss/grid/_1140.scss */
+  /* line 101, scss/grid/_1140.scss */
   body {
     font-size: 16px;
     -webkit-text-size-adjust: none;
   }
 
-  /* line 107, scss/grid/_1140.scss */
-  .row, .content-area, body, .container, .site-main {
+  /* line 106, scss/grid/_1140.scss */
+  .row, .site-header, .site-main, .site-footer, body, .container, .site {
     width: 100%;
     min-width: 0;
     margin-left: 0px;
@@ -247,8 +246,8 @@ img {
     padding-right: 0px;
   }
 
-  /* line 116, scss/grid/_1140.scss */
-  .row .onecol, .content-area .onecol, .row .twocol, .content-area .twocol, .row .threecol, .content-area .threecol, .row .fourcol, .content-area .fourcol, .row .fivecol, .content-area .fivecol, .row .sixcol, .content-area .sixcol, .row .sevencol, .content-area .sevencol, .row .eightcol, .content-area .eightcol, .row .ninecol, .content-area .ninecol, .row .tencol, .content-area .tencol, .row .elevencol, .content-area .elevencol, .row .twelvecol, .content-area .twelvecol {
+  /* line 115, scss/grid/_1140.scss */
+  .mobile-col, .row .onecol, .site-header .onecol, .site-main .onecol, .site-footer .onecol, .row .twocol, .site-header .twocol, .site-main .twocol, .site-footer .twocol, .row .threecol, .site-header .threecol, .site-main .threecol, .site-footer .threecol, .row .fourcol, .site-header .fourcol, .site-main .fourcol, .site-footer .fourcol, .row .widget-area, .site-header .widget-area, .site-main .widget-area, .site-footer .widget-area, .row .fivecol, .site-header .fivecol, .site-main .fivecol, .site-footer .fivecol, .row .sixcol, .site-header .sixcol, .site-main .sixcol, .site-footer .sixcol, .row .sevencol, .site-header .sevencol, .site-main .sevencol, .site-footer .sevencol, .row .eightcol, .site-header .eightcol, .site-main .eightcol, .site-footer .eightcol, .row .content-area, .site-header .content-area, .site-main .content-area, .site-footer .content-area, .row .ninecol, .site-header .ninecol, .site-main .ninecol, .site-footer .ninecol, .row .tencol, .site-header .tencol, .site-main .tencol, .site-footer .tencol, .row .elevencol, .site-header .elevencol, .site-main .elevencol, .site-footer .elevencol, .row .twelvecol, .site-header .twelvecol, .site-main .twelvecol, .site-footer .twelvecol, .row .site-header, .site-header .site-header, .site-main .site-header, .site-footer .site-header, .row .site-footer, .site-header .site-footer, .site-main .site-footer, .site-footer .site-footer, .site-header, .site-footer {
     width: auto;
     float: none;
     margin-left: 0px;
@@ -258,57 +257,57 @@ img {
   }
 }
 /* line 1, scss/grid/_1140.ie.scss */
-.ie .row .onecol, .ie .content-area .onecol {
+.ie .row .onecol, .ie .site-header .onecol, .ie .site-main .onecol, .ie .site-footer .onecol {
   width: 4.7%;
 }
 
 /* line 5, scss/grid/_1140.ie.scss */
-.ie .row .twocol, .ie .content-area .twocol {
+.ie .row .twocol, .ie .site-header .twocol, .ie .site-main .twocol, .ie .site-footer .twocol {
   width: 13.2%;
 }
 
 /* line 9, scss/grid/_1140.ie.scss */
-.ie .row .threecol, .ie .content-area .threecol {
+.ie .row .threecol, .ie .site-header .threecol, .ie .site-main .threecol, .ie .site-footer .threecol {
   width: 22.05%;
 }
 
 /* line 13, scss/grid/_1140.ie.scss */
-.ie .row .fourcol, .ie .content-area .fourcol {
+.ie .row .fourcol, .ie .site-header .fourcol, .ie .site-main .fourcol, .ie .site-footer .fourcol, .ie .row .widget-area, .ie .site-header .widget-area, .ie .site-main .widget-area, .ie .site-footer .widget-area {
   width: 30.6%;
 }
 
 /* line 17, scss/grid/_1140.ie.scss */
-.ie .row .fivecol, .ie .content-area .fivecol {
+.ie .row .fivecol, .ie .site-header .fivecol, .ie .site-main .fivecol, .ie .site-footer .fivecol {
   width: 39%;
 }
 
 /* line 21, scss/grid/_1140.ie.scss */
-.ie .row .sixcol, .ie .content-area .sixcol {
+.ie .row .sixcol, .ie .site-header .sixcol, .ie .site-main .sixcol, .ie .site-footer .sixcol {
   width: 48%;
 }
 
 /* line 25, scss/grid/_1140.ie.scss */
-.ie .row .sevencol, .ie .content-area .sevencol {
+.ie .row .sevencol, .ie .site-header .sevencol, .ie .site-main .sevencol, .ie .site-footer .sevencol {
   width: 56.75%;
 }
 
 /* line 29, scss/grid/_1140.ie.scss */
-.ie .row .eightcol, .ie .content-area .eightcol {
+.ie .row .eightcol, .ie .site-header .eightcol, .ie .site-main .eightcol, .ie .site-footer .eightcol, .ie .row .content-area, .ie .site-header .content-area, .ie .site-main .content-area, .ie .site-footer .content-area {
   width: 61.6%;
 }
 
 /* line 33, scss/grid/_1140.ie.scss */
-.ie .row .ninecol, .ie .content-area .ninecol {
+.ie .row .ninecol, .ie .site-header .ninecol, .ie .site-main .ninecol, .ie .site-footer .ninecol {
   width: 74.05%;
 }
 
 /* line 37, scss/grid/_1140.ie.scss */
-.ie .row .tencol, .ie .content-area .tencol {
+.ie .row .tencol, .ie .site-header .tencol, .ie .site-main .tencol, .ie .site-footer .tencol {
   width: 82%;
 }
 
 /* line 41, scss/grid/_1140.ie.scss */
-.ie .row .elevencol, .ie .content-area .elevencol {
+.ie .row .elevencol, .ie .site-header .elevencol, .ie .site-main .elevencol, .ie .site-footer .elevencol {
   width: 91.35%;
 }
 
@@ -671,6 +670,9 @@ hr {
   margin-bottom: 1.714285714rem;
 }
 
+/* Add the grid to the wordpress default classes */
+/* Mobile */
+/* Import the sections */
 /* =Menu
 ----------------------------------------------- */
 /* line 4, scss/sections/_menu.scss */
