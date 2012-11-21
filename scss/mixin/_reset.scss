@@ -27,6 +27,7 @@ html {
 }
 body {
 	background: #fff;
+	line-height: 1;
 }
 article,
 aside,
@@ -36,6 +37,7 @@ figure,
 footer,
 header,
 hgroup,
+menu,
 nav,
 section {
 	display: block;
@@ -44,7 +46,7 @@ ol, ul {
 	list-style: none;
 }
 table { /* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: separate;
+	border-collapse: separate; //collapse ?
 	border-spacing: 0;
 }
 caption, th, td {
@@ -54,6 +56,7 @@ caption, th, td {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: "";
+	content: none;
 }
 blockquote, q {
 	quotes: "" "";
