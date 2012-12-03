@@ -1,39 +1,31 @@
 /**
- * Handles toggling the main navigation menu for small screens.
+ * navigation.js
+ *
+ * Handles toggling the navigation menu for small screens.
  */
-jQuery( document ).ready( function( $ ) {
-	var $masthead = $( '#masthead' ),
-	    timeout = false;
+( function() {
+	var button = document.getElementById( 'site-navigation' ).getElementsByTagName( 'h3' )[0],
+	    menu   = document.getElementById( 'site-navigation' ).getElementsByTagName( 'ul' )[0];
 
-	$.fn.smallMenu = function() {
-		$masthead.find( '.site-navigation' ).removeClass( 'main-navigation' ).addClass( 'main-small-navigation' );
-		$masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' );
+	if ( undefined === button )
+		return false;
 
-		$( '.menu-toggle' ).unbind( 'click' ).click( function() {
-			$masthead.find( '.menu' ).toggle();
-			$( this ).toggleClass( 'toggled-on' );
-		} );
+	// Hide button if menu is missing or empty.
+	if ( undefined === menu || ! menu.childNodes.length ) {
+		button.style.display = 'none';
+		return false;
+	}
+
+	button.onclick = function() {
+		if ( -1 == menu.className.indexOf( 'nav-menu' ) )
+			menu.className = 'nav-menu';
+
+		if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
+			button.className = button.className.replace( ' toggled-on', '' );
+			menu.className = menu.className.replace( ' toggled-on', '' );
+		} else {
+			button.className += ' toggled-on';
+			menu.className += ' toggled-on';
+		}
 	};
-
-	// Check viewport width on first load.
-	if ( $( window ).width() < 767 )
-		$.fn.smallMenu();
-
-	// Check viewport width when user resizes the browser window.
-	$( window ).resize( function() {
-		var browserWidth = $( window ).width();
-
-		if ( false !== timeout )
-			clearTimeout( timeout );
-
-		timeout = setTimeout( function() {
-			if ( browserWidth < 767 ) {
-				$.fn.smallMenu();
-			} else {
-				$masthead.find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
-				$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
-				$masthead.find( '.menu' ).removeAttr( 'style' );
-			}
-		}, 200 );
-	} );
-} );
+} )();
