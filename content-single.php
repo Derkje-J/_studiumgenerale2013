@@ -9,7 +9,7 @@
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
-		<div class="entry-meta">
+		<!--<div class="entry-meta">
 			<?php sg2013_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
@@ -22,7 +22,7 @@
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'sg2013' ) );
+			$category_list = get_the_category_list( __( ', ', 'sg2013' ) ) . get_the_term_list( get_the_ID(),'sg_eventcategory', '', __(', ', 'sg2013'), '' );
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'sg2013' ) );
