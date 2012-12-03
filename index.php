@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
+		<div id="primary" class="content-area eightcol">
 			<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -44,6 +44,8 @@ get_header(); ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
+        
+        <hr>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
