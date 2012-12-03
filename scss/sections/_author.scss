@@ -1,0 +1,35 @@
+/* Author profiles */
+.author {
+	.archive-header {
+		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
+	}
+	
+	&.archive {
+		.author-info {
+			border-top: 0;
+			margin: 0 0 48px;
+			margin: 0 0 3rem;
+		}
+		
+		.author-avatar {
+			margin-top: 0;
+		}
+	}
+}
+
+.author-info {
+	border-top: 1px solid #ededed;
+	margin: 24px 0;
+	margin: 1.5rem 0;
+	padding-top: 24px;
+	padding-top: 1.5rem;
+	overflow: hidden;
+}
+
+.author-description p {
+	color: #777;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	line-height: 1.846153846;
+}

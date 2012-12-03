@@ -3,24 +3,36 @@
 
 .sticky {
 }
+
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 16px;
+	margin: 0 0 1rem;
 }
+
+.entry-header {
+	margin-bottom: 8px;
+	margin-bottom: 0.5rem;	
+}
+
 .entry-meta {
 	clear: both;
 }
+
 .byline {
 	display: none;
 }
-.single .byline,
-.group-blog .byline {
+
+.single .byline, .group-blog .byline {
 	display: inline;
 }
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+
+.entry-content, .entry-summary {
+	margin: 16px 0 0;
+	margin: 1rem 0 0;
 }
+
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 16px;
+	margin: 0 0 1rem;
 }

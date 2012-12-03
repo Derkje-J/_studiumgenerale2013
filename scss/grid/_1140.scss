@@ -5,14 +5,28 @@
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+@mixin row {
+	width: 100%;
+	max-width: 1140px;
+	max-width: 71.25rem;
+	min-width: 755px;
+	min-width: 47.1875rem;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px;
+	padding: 0.3125rem;
 }
 
 .row {
-	width: 100%;
-	max-width: 1140px;
-	min-width: 755px;
-	margin: 0 auto;
-	overflow: hidden;
+	@include row;
+}
+
+.row .row {
+	padding: 0;	
 }
 
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
@@ -86,20 +100,31 @@ img {
 
 @media only screen and (max-width: 1023px) {
 
-	body {
-		font-size: 0.8em;
-		line-height: 1.5em;
-	}
+	//body {
+	//	font-size: 0.8em;
+	//	line-height: 1.5em;
+	//}
 	
 }
 
 
 /* Mobile */
-
+@mixin mobile-col {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+	
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
 		font-size: 16px;
+		font-size: 1rem;
 		-webkit-text-size-adjust: none;
 	}
 	
@@ -111,18 +136,9 @@ img {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	
-	.mobile-col {
-		width: auto;
-		float: none;
-		margin-left: 0px;
-		margin-right: 0px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	
+
 	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
-		@extend .mobile-col;
+		@include mobile-col;
 	}
 
 }
