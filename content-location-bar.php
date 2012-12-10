@@ -1,4 +1,8 @@
 <?php
+if (!defined("SG_EVENTS_VERSION")) {
+	echo "<p>".__("SG_EVENTS_VERSION is not defined. Please enable the events plugin.", "sg")."</p>";
+	return;	
+}
 
 $location_data = get_location_details_data();
 if (isset($location_data)) {

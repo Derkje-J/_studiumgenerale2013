@@ -10,12 +10,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content clear">
     	<?php 
-		echo sg_event_full(
-			array(
-				"limit" => "4",
-				"fullview" => true,
-			)
-		); 
+		if (!defined("SG_EVENTS_VERSION"))
+			echo "<p>".__("SG_EVENTS_VERSION is not defined. Please enable the events plugin.", "sg")."</p>";
+		else
+			echo sg_event_full(
+				array(
+					"limit" => "4",
+					"fullview" => true,
+				)
+			); 
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

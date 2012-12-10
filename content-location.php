@@ -8,14 +8,18 @@
  * @subpackage Studium_Generale_2012
  */
  
+if (!defined("SG_EVENTS_VERSION")) {
+	echo "<p>".__("SG_EVENTS_VERSION is not defined. Please enable the events plugin.", "sg")."</p>";
+	return;	
+}
+
 $meta_data = get_post_custom(get_the_ID());
- 
  ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="ninecol last">
     <header class="entry-header">
         <div class="event-data">
             <hgroup>
-                <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+                <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sg2013' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
             </hgroup>     
         </div>  
         <div class="entry-thumbnail">

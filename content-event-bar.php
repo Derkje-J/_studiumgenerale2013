@@ -1,4 +1,8 @@
 <?php
+if (!defined("SG_EVENTS_VERSION")) {
+	echo "<p>".__("SG_EVENTS_VERSION is not defined. Please enable the events plugin.", "sg")."</p>";
+	return;	
+}
 
 $speakers = get_event_speakers_data();
 $location = get_event_location_data();
