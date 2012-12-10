@@ -18,7 +18,7 @@
 		}
 		
 		h2, h3 {
-			display: inline-block;
+			display: block;
 		}
 		
 		h2 {
@@ -29,14 +29,9 @@
 			margin-right: 0.1875rem;
 		}
 		
-		h3 {
+		h3, .datetime {
 			font-size: 12px;	
 			font-size: 0.75rem;	
-			background-color: #E7E7E7;
-			border-radius: 5px;
-			border-radius: 0.3125rem;
-			padding: 5px;
-			padding: 0.3125rem;
 		}
 		
 		hgroup {
@@ -79,6 +74,19 @@
 		li {
 			img {
 				margin-bottom: 0;
+			}
+			
+			h2 {
+				display: inline-block;
+			}
+			
+			h3 { 
+				display: inline-block;
+				//background-color: #E7E7E7;
+				//border-radius: 5px;
+				//border-radius: 0.3125rem;
+				padding: 5px;
+				padding: 0.3125rem;
 			}
 			
 			header > div {

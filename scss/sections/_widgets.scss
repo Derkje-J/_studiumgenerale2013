@@ -63,7 +63,7 @@
 	}
 }
 
-.cat-item {
+.cat-item, .location-item, .tagcloud > a  {
 	display: inline-block;
 	margin-right: 8px;	
 	margin-right: 0.5rem;	
@@ -71,11 +71,13 @@
 	margin-bottom: 0.5rem;
 }
 
-.cat-item > a {
+.cat-item, .location-item  > a, .tagcloud > a {
 	background-color: #E6E6E6;
 	padding: 5px;
 	padding: 0.3125rem;
 	border-radius: 5px;
+	font-size: 12px !important;
+	font-size: 0.75rem !important;
 	
 	&:hover {
 		background-color: transparent;
