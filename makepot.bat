@@ -1,0 +1,1 @@
+php "C:\Users\Derk-Jan\Documents\Visual Studio 2010\Projects\wordpress-i18n\makepot.php" wp-theme "C:\Users\Derk-Jan\My Websites\sg.tudelft.nl\wp-content\themes\studiumgenerale2013" "C:\Users\Derk-Jan\My Websites\sg.tudelft.nl\wp-content\themes\studiumgenerale2013\languages\sg2013.pot"

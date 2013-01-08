@@ -4,8 +4,8 @@
  *
  * Learn more: http://codex.wordpress.org/Post_Formats
  *
- * @package WordPress
- * @subpackage Studium_Generale_2012
+ * @package Studium Generale 2013
+ * @subpackage Studium Generale 2013 1.0
  */
  
  if (!defined("SG_EVENTS_VERSION")) {
@@ -24,7 +24,7 @@ $meta_extra = get_event_extra();
         <div class="entry-thumbnail fivecol">
         <?php if ( has_post_thumbnail()) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-               <?php the_post_thumbnail(array(380, 180)); ?>
+               <?php the_post_thumbnail( 'event-li-thumb' ); //288, 180) ); ?>
             </a>
        	<?php endif; ?>
         </div>

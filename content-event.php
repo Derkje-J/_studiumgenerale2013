@@ -1,11 +1,11 @@
 <?php
 /**
- * The template for displaying events in the event lists on index and archive pages
+ * The template for displaying events on the event page
  *
  * Learn more: http://codex.wordpress.org/Post_Formats
  *
- * @package WordPress
- * @subpackage Studium_Generale_2012
+ * @package Studium Generale 2013
+ * @subpackage Studium Generale 2013 1.0
  */
  
 if (!defined("SG_EVENTS_VERSION")) {
@@ -17,6 +17,8 @@ $meta_data = get_post_custom(get_the_ID());
 $location = get_event_location();
 
 $meta_extra = isset($meta_data["sg_event_extra"]) ? unserialize($meta_data["sg_event_extra"][0]) : array();
+
+$show_header = isset($meta_data["sg_event_header"]) && strlen($meta_data["sg_event_header"][0]);
  
  ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="ninecol last">
@@ -28,7 +30,7 @@ $meta_extra = isset($meta_data["sg_event_extra"]) ? unserialize($meta_data["sg_e
             </hgroup>     
         </div>  
         <div class="entry-thumbnail">
-        <?php if ( has_post_thumbnail()) : ?>
+        <?php if ( has_post_thumbnail() && $show_header) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
            
                <?php the_post_thumbnail(array(850, 1000)); ?>
@@ -38,6 +40,8 @@ $meta_extra = isset($meta_data["sg_event_extra"]) ? unserialize($meta_data["sg_e
     </header><!-- .entry-header -->
     <div class="entry-content">
 		<?php the_content(); ?>
+        
+        <?php the_event_recording(); ?>
 	</div><!-- .entry-content -->
     <footer class="entry-meta">
 		<?php

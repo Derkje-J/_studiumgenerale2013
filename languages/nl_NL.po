@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Studium Generale 2013 1.1-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/studiumgenerale2013\n"
-"POT-Creation-Date: 2012-12-10 15:08:21+00:00\n"
+"POT-Creation-Date: 2013-01-07 08:38:56+00:00\n"
+"PO-Revision-Date: 2013-01-07 09:40+0100\n"
+"Last-Translator: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
+"Language-Team: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2012-12-10 16:46+0100\n"
-"Last-Translator: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
-"Language-Team: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
 "X-Generator: Poedit 1.5.4\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:16
@@ -36,31 +36,32 @@ msgstr "Meest Gebruikte Categoriën"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Probeer het maandarchief. %1$s"
 
-#: archive.php:22
+#: archive-sg_event.php:22 archive.php:22 taxonomy-sg_eventcategory.php:22
 msgid "Category Archives: %s"
 msgstr "Categoriearchief: %s"
 
-#: archive.php:25
+#: archive-sg_event.php:25 archive.php:25 taxonomy-sg_eventcategory.php:25
 msgid "Tag Archives: %s"
 msgstr "Tagarchief"
 
-#: archive.php:32
+#: archive-sg_event.php:32 archive.php:32 taxonomy-sg_eventcategory.php:32
 msgid "Author Archives: %s"
 msgstr "Auteursarchief: %s"
 
-#: archive.php:40
+#: archive-sg_event.php:40 archive.php:40 taxonomy-sg_eventcategory.php:40
 msgid "Daily Archives: %s"
 msgstr "Dagarchief: %s"
 
-#: archive.php:43
+#: archive-sg_event.php:43 archive.php:43 taxonomy-sg_eventcategory.php:43
 msgid "Monthly Archives: %s"
 msgstr "Maandarchief: %s"
 
-#: archive.php:46
+#: archive-sg_event.php:46 archive.php:46 taxonomy-sg_eventcategory.php:46
 msgid "Yearly Archives: %s"
 msgstr "Jaararchief: %s"
 
-#: archive.php:49 sidebar.php:18
+#: archive-sg_event.php:49 archive.php:49 sidebar.php:18
+#: taxonomy-sg_eventcategory.php:49
 msgid "Archives"
 msgstr "Archief"
 
@@ -86,30 +87,45 @@ msgstr "Nieuere Reacties &rarr;"
 msgid "Comments are closed."
 msgstr "Reacties zijn gesloten."
 
-#: content-event-bar.php:3 content-event-li.php:12 content-event.php:12
-#: content-front-page.php:14 content-location-bar.php:3
-#: content-location.php:12 sidebar-calendar.php:12
+#: content-event-bar.php:10 content-event-li.php:12 content-event.php:12
+#: content-front-page.php:17 content-location-bar.php:10
+#: content-location-li.php:12 content-location.php:10 sidebar-calendar.php:12
 msgid "SG_EVENTS_VERSION is not defined. Please enable the events plugin."
 msgstr "SG_EVENTS_VERSIE is niet gedefiniëerd. Activeer de events plugin."
 
-#: content-event-bar.php:14 content-event-li.php:34 content-event.php:26
-#: content-location.php:22 content.php:10 sidebar-calendar.php:20
-#: sidebar-calendar.php:23 sidebar-calendar.php:26
+#: content-event-bar.php:21 content-event-li.php:34 content-event.php:28
+#: content-location-li.php:28 content-location.php:20 content.php:10
 msgid "Permalink to %s"
 msgstr "Permanente link naar %s"
 
-#: content-event-bar.php:46
+#: content-event-bar.php:22
+msgid "Social"
+msgstr "Social"
+
+#: content-event-bar.php:25
+msgid "Login"
+msgstr "Inloggen"
+
+#: content-event-bar.php:25
+msgid "Login to apply."
+msgstr "Log in om aan te geven of je gaat."
+
+#: content-event-bar.php:33
+msgid "Details"
+msgstr "Details"
+
+#: content-event-bar.php:64
 msgid "No speaker information"
 msgstr "Geen spreker informatie"
 
 #. translators: used between list items, there is a space after the comma
-#: content-event.php:45 content-event.php:48 content-location.php:40
-#: content-location.php:43 content-single.php:25 content-single.php:28
+#: content-event.php:49 content-event.php:52 content-location.php:38
+#: content-location.php:41 content-single.php:25 content-single.php:28
 #: content.php:34 content.php:44
 msgid ", "
 msgstr ", "
 
-#: content-event.php:53 content-location.php:48 content-single.php:33
+#: content-event.php:57 content-location.php:46 content-single.php:33
 msgid ""
 "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
 "to %4$s\" rel=\"bookmark\">permalink</a>."
@@ -117,7 +133,7 @@ msgstr ""
 "Dit item is getagged met %2$s. Voeg een bladwijzer toe voor de <a href=\"%3$s"
 "\" title=\"Permanente link naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:55 content-location.php:50 content-single.php:35
+#: content-event.php:59 content-location.php:48 content-single.php:35
 msgid ""
 "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
 "\">permalink</a>."
@@ -125,27 +141,50 @@ msgstr ""
 "Voeg een bladwijzer toe voor de <a href=\"%3$s\" title=\"Permanente link "
 "naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:61 content-location.php:56 content-single.php:41
+#: content-event.php:65 content-location.php:54 content-single.php:41
 msgid ""
 "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
 "title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
-"Dit item is geplaatst in %1$ en getagged met %2$s. Voeg een bladwijzer toe "
+"Dit item is geplaatst in %1$s en getagged met %2$s. Voeg een bladwijzer toe "
 "voor de <a href=\"%3$s\" title=\"Permanente link naar %4$s\" rel=\"bookmark"
 "\">permanente link</a>."
 
-#: content-event.php:63 content-location.php:58 content-single.php:43
+#: content-event.php:67 content-location.php:56 content-single.php:43
 msgid ""
 "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
 "\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
-"Dit item is geplaatst in %1$. Voeg een bladwijzer toe voor de <a href=\"%3$s"
+"Dit item is geplaatst in %1$s. Voeg een bladwijzer toe voor de <a href=\"%3$s"
 "\" title=\"Permanente link naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:77 content-location.php:72 content-page.php:18
+#: content-event.php:81 content-location.php:70 content-page.php:18
 #: content-single.php:57 content.php:59 image.php:34 image.php:100
 msgid "Edit"
 msgstr "Bewerk"
+
+#: content-front-page.php:13
+msgid "Upcoming events"
+msgstr "Aankomende evenementen"
+
+#: content-front-page.php:19
+msgid ""
+"class SG_EventShortcodes is not defined. Please enable the events plugin."
+msgstr ""
+"classe SG_EventShortcodes is niet gedefiniëerd. Activeer de events plugin."
+
+#: content-location-bar.php:20
+msgid "Visit location website"
+msgstr "Bezoek website van de locatie"
+
+#: content-location-bar.php:20
+msgid "Website"
+msgstr "Website"
+
+#: content-location-bar.php:23
+msgctxt "sg2013"
+msgid "No details"
+msgstr "Geen details"
 
 #: content-page.php:17 content-single.php:19 content.php:26 image.php:86
 msgid "Pages:"
@@ -239,23 +278,7 @@ msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
 
-#: functions.php:299
-msgid "Left Sidebar"
-msgstr "Linker Zijbalk"
-
-#: functions.php:301
-msgid "The sidebar on the left (primary main sidebar)"
-msgstr "De zijbalk aan de linker kant"
-
-#: functions.php:308
-msgid "Right Sidebar"
-msgstr "Rechter Zijbalk"
-
-#: functions.php:310
-msgid "The sidebar on the right (secondary main sidebar)"
-msgstr "De zijbalk aan "
-
-#: functions.php:400
+#: functions.php:383
 msgid "[more]"
 msgstr "[meer]"
 
@@ -507,6 +530,14 @@ msgstr "Zoeken &hellip;"
 msgid "Recordings of recent events"
 msgstr "Opnames van recente evenementen"
 
+#: sidebar-calendar.php:55
+msgid "See this recording."
+msgstr "Bekijk deze opname."
+
+#: sidebar-calendar.php:63
+msgid "No recordings found."
+msgstr "Geen opnames gevonden."
+
 #: sidebar.php:25
 msgid "Meta"
 msgstr "Meta"
@@ -540,9 +571,25 @@ msgid "http://derk-jan.com"
 msgstr "http://derk-jan.com"
 
 #. Template Name of the plugin/theme
+msgid "collegerama"
+msgstr "Collegerama"
+
+#. Template Name of the plugin/theme
 msgid "Front Page Template"
 msgstr "Voorpagina Template"
 
 #. Template Name of the plugin/theme
 msgid "Full-width Page Template, No Sidebar"
 msgstr "Volledige breedte pagina template zonder zijbalk"
+
+#~ msgid "Left Sidebar"
+#~ msgstr "Linker Zijbalk"
+
+#~ msgid "The sidebar on the left (primary main sidebar)"
+#~ msgstr "De zijbalk aan de linker kant"
+
+#~ msgid "Right Sidebar"
+#~ msgstr "Rechter Zijbalk"
+
+#~ msgid "The sidebar on the right (secondary main sidebar)"
+#~ msgstr "De zijbalk aan "

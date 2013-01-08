@@ -124,6 +124,56 @@ function sg2013_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Event Footer Widget A', 'sg2013' ),
+		'id' => 'sidebar-8',
+		'description' => __( 'Appears on event pages below the content', 'sg2013' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Event Footer Widget B', 'sg2013' ),
+		'id' => 'sidebar-9',
+		'description' => __( 'Appears on event pages below the content', 'sg2013' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
+	register_sidebar( array(
+		'name' => __( 'First 404 Widget Area', 'sg2013' ),
+		'id' => 'sidebar-10',
+		'description' => __( 'Appears when displaying the 404 error code page', 'sg2013' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Second 404 Widget Area', 'sg2013' ),
+		'id' => 'sidebar-11',
+		'description' => __( 'Appears when displaying the 404 error code page', 'sg2013' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Third 404 Widget Area', 'sg2013' ),
+		'id' => 'sidebar-12',
+		'description' => __( 'Appears when displaying the 404 error code page', 'sg2013' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'sg2013_widgets_init' );
 
@@ -173,7 +223,7 @@ function sg2013_custom_fonts() {
 	 *
 	 * To disable in a child theme, use wp_dequeue_style()
 	 * function mytheme_dequeue_fonts() {
-	 *     wp_dequeue_style( 'twentytwelve-fonts' );
+	 *     wp_dequeue_style( 'sg2013-fonts' );
 	 * }
 	 * add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
 	 */
@@ -228,8 +278,6 @@ function sg2013_body_class( $classes ) {
 		$classes[] = 'template-front-page';
 		if ( has_post_thumbnail() )
 			$classes[] = 'has-post-thumbnail';
-		//if ( is_active_sidebar( 'sidebar-2' ) && is_active_sidebar( 'sidebar-3' ) )
-		//	$classes[] = 'two-sidebars';
 	}
 
 	if ( empty( $background_color ) )
@@ -273,10 +321,13 @@ if (!function_exists('sg_remove_theme_options')) {
 if (!function_exists('sg_favicon_link')) {
 	add_action('wp_head', 'sg_favicon_link');
 	function sg_favicon_link() {
-    	echo '<link rel="shortcut icon" type="image/x-icon" 	href="/favicon.ico" />' . "\n";
+    	echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />' . "\n";
 	}
 }
 
+/*
+ * Looks for all posts in all post types when searching on tag
+ */
 if (!function_exists('post_type_tags_fix')) {
 	function post_type_tags_fix($request) {
 		if ( isset($request['tag']) && !isset($request['post_type']) )
@@ -292,34 +343,10 @@ if (!function_exists('post_type_tags_fix')) {
  * Removes the main sidebar from the theme and adds two sidebars that are shown on 
  * every page with a post.
  */
-if (!function_exists('sg_widgets_init')) {
-	add_action( 'widgets_init', 'sg_widgets_init' );
-	function sg_widgets_init() {
-		register_sidebar( array(
-			'name' => __( 'Left Sidebar', 'sg' ),
-			'id' => 'sidebar-7',
-			'description' => __( 'The sidebar on the left (primary main sidebar)', 'sg' ),
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s">', //'<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>', //"</aside>",
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
-		) );
-		register_sidebar( array(
-			'name' => __( 'Right Sidebar', 'sg' ),
-			'id' => 'sidebar-6',
-			'description' => __( 'The sidebar on the right (secondary main sidebar)', 'sg' ),
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s">', //'<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>', //"</aside>",
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
-		));
-	}
-	
 	// Code for the shortcodes to work in widgets
 	add_filter( 'widget_text', 'shortcode_unautop');
 	add_filter( 'widget_text', 'do_shortcode');
-}
-
+	
 /**
  * Renew Headers
  *
@@ -390,11 +417,17 @@ if (!function_exists('sg_remove_twenty_eleven_headers')) {
 	register_default_headers( cms_theme_headers() );
 }
 
+/**
+ * Custom Excerpt Length
+ */
 function custom_excerpt_length( $length ) {
-	return 36;
+	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+/**
+ * Excerpt More
+ */
 function new_excerpt_more($more) {
        global $post;
 	return ' ... <a href="'. get_permalink($post->ID) . '">'.__('[more]', 'sg2013').'</a>';

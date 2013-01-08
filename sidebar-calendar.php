@@ -16,15 +16,56 @@
             <aside id="recordings" class="widget widget_recordings">
             	<h3 class="widget-title"><?php _e("Recordings of recent events", "sg2013"); ?></h3>
 	            <ul class="recordings">
-            		<li class="recording">
-                    	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sg2013' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-                    </li>
-                    <li class="recording">
-                    	<a href="#" title="<?php printf( esc_attr__( 'Permalink to %s', 'sg2013' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">Some other event</a>
-                    </li>
-                    <li class="recording">
-                    	<a href="#" title="<?php printf( esc_attr__( 'Permalink to %s', 'sg2013' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">Some event</a>
-                    </li>
+            	<?php
+					$args = array(
+						'post_type' => 'sg_event',
+						'post_status' => 'publish',
+
+						'meta_key' => 'sg_event_startdate',
+						'orderby' => 'meta_value_num',
+						'order' => 'DESC',
+						
+						'nopaging' => true,
+						'posts_per_page' => -1,
+						
+						/*'meta_query' => array(
+							array(
+								'key' => 'sg_recording_url',
+								'value' => '0',
+								'compare' => '>',
+								'type' => 'NUMERIC'
+							)
+						)*/
+					);
+					
+					$max = 5; // change for more/less
+					$count = 0;
+					$events = new WP_Query($args);
+					
+					while ( $events->have_posts() ) :
+						$events->the_post();
+						$custom = get_post_meta(get_the_ID(), 'sg_recording_url');
+						
+						if (!isset($custom) || !isset($custom[0]) || !strlen($custom[0]))
+							continue;
+							
+						$count++;
+							
+						echo '<li class="recording">
+							<a href="' .get_permalink(get_the_ID()).'#recording-'.get_the_ID().'" title="'.__("See this recording.", "sg-event").'">'.get_the_title() . '</a>
+						</li>';
+						
+						if ($max <= $count)
+							break;
+					endwhile;
+					
+					if (!$count)
+						echo '<li class="no-recording">'.__("No recordings found.", "sg-event").'</li>';
+					
+					// Restore original Query & Post Data
+					wp_reset_query();
+					wp_reset_postdata();
+				?>
             	</ul>
             </aside>
 		</div><!-- #secondary .widget-area -->

@@ -3,7 +3,7 @@
 ----------------------------------------------- */
 
 body, button, input, select, textarea {
-	color: #404040;
+	color: $buttoncolor;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1.0rem;
@@ -50,7 +50,7 @@ h6 {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: $hrcolor;
 	border: 0;
 	height: 1px;
 	margin-botton: 16px;
@@ -64,9 +64,14 @@ hgroup {
 
 /* Text elements */
 p {
-	font-size: 14px;
-	font-size: 0.875rem;
-	margin-bottom: 1.5em;
+	//font-size: 14px;
+	//font-size: 0.875rem;
+	
+	font-size: 16px;
+	font-size: 1rem;
+	
+	margin-bottom: 1rem;
+	margin-bottom: 16px;
 }
 
 ul, ol {
@@ -112,6 +117,7 @@ address {
 	margin: 0 o 16px;
 	margin: 0 0 1rem;
 }
+
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -125,17 +131,21 @@ pre {
 	overflow: auto;
 	max-width: 100%;
 }
+
 code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
+
 abbr, acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted $acronymborder;
 	cursor: help;
 }
+
 mark, ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
+
 sup,
 sub {
 	font-size: 75%;

@@ -19,7 +19,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 /* =Reset
 -------------------------------------------------------------- */
-/* line 11, scss/mixin/_reset.scss */
+/* line 11, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +39,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 22, scss/mixin/_reset.scss */
+/* line 22, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 html {
   font-size: 100%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -51,13 +51,13 @@ html {
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
-/* line 28, scss/mixin/_reset.scss */
+/* line 28, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 body {
   background: #fff;
   line-height: 1;
 }
 
-/* line 42, scss/mixin/_reset.scss */
+/* line 42, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 article,
 aside,
 details,
@@ -72,62 +72,62 @@ section {
   display: block;
 }
 
-/* line 45, scss/mixin/_reset.scss */
+/* line 45, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 48, scss/mixin/_reset.scss */
+/* line 48, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 52, scss/mixin/_reset.scss */
+/* line 52, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 caption, th, td {
   font-weight: normal;
   text-align: left;
 }
 
-/* line 57, scss/mixin/_reset.scss */
+/* line 57, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 61, scss/mixin/_reset.scss */
+/* line 61, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 64, scss/mixin/_reset.scss */
+/* line 64, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 68, scss/mixin/_reset.scss */
+/* line 68, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 a:hover,
 a:active {
   /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
   outline: 0;
 }
 
-/* line 71, scss/mixin/_reset.scss */
+/* line 71, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 a img {
   border: 0;
 }
 
 /* Clearing floats */
-/* line 78, scss/mixin/_reset.scss */
+/* line 78, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 .clear:after,
 .wrapper:after,
 .format-status .entry-header:after {
   clear: both;
 }
 
-/* line 86, scss/mixin/_reset.scss */
+/* line 86, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_reset.scss */
 .clear:before,
 .clear:after,
 .wrapper:before,
@@ -141,7 +141,7 @@ a img {
 /* CSS Document */
 /* =Global
 ----------------------------------------------- */
-/* line 5, scss/mixin/_global.scss */
+/* line 5, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 body, button, input, select, textarea {
   color: #404040;
   font-family: sans-serif;
@@ -151,130 +151,131 @@ body, button, input, select, textarea {
 }
 
 /* Headings */
-/* line 14, scss/mixin/_global.scss */
+/* line 14, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 18, scss/mixin/_global.scss */
+/* line 18, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h1 {
   font-size: 32px;
   font-size: 2rem;
 }
 
-/* line 23, scss/mixin/_global.scss */
+/* line 23, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h2 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 29, scss/mixin/_global.scss */
+/* line 29, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h3 {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 34, scss/mixin/_global.scss */
+/* line 34, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h4 {
   font-size: 16px;
   font-size: 1rem;
   font-weight: italic;
 }
 
-/* line 40, scss/mixin/_global.scss */
+/* line 40, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h5 {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
 }
 
-/* line 46, scss/mixin/_global.scss */
+/* line 46, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 h6 {
   font-size: 14px;
   font-size: 0.875rem;
   font-style: italic;
 }
 
-/* line 52, scss/mixin/_global.scss */
+/* line 52, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 hr {
-  background-color: #ccc;
+  background-color: #cccccc;
   border: 0;
   height: 1px;
   margin-botton: 16px;
   margin-bottom: 1rem;
 }
 
-/* line 60, scss/mixin/_global.scss */
+/* line 60, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 hgroup {
   margin-botton: 16px;
   margin-bottom: 1rem;
 }
 
 /* Text elements */
-/* line 66, scss/mixin/_global.scss */
+/* line 66, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 p {
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin-bottom: 1.5em;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
-/* line 72, scss/mixin/_global.scss */
+/* line 77, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 ul, ol {
   margin: 0 0 16px, 32px;
   margin: 0 0 1rem 2rem;
 }
 
-/* line 77, scss/mixin/_global.scss */
+/* line 82, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 ul {
   list-style: disc;
 }
 
-/* line 81, scss/mixin/_global.scss */
+/* line 86, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 85, scss/mixin/_global.scss */
+/* line 90, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0;
   margin-left: 16px;
   margin-left: 1rem;
 }
 
-/* line 91, scss/mixin/_global.scss */
+/* line 96, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 95, scss/mixin/_global.scss */
+/* line 100, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 dd {
   margin: 0 16px 16px;
   margin: 0 1rem 1rem;
 }
 
-/* line 100, scss/mixin/_global.scss */
+/* line 105, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 104, scss/mixin/_global.scss */
+/* line 109, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 107, scss/mixin/_global.scss */
+/* line 112, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 blockquote {
   margin: 0 16px;
   margin: 0 1rem;
 }
 
-/* line 111, scss/mixin/_global.scss */
+/* line 116, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 address {
   margin: 0 o 16px;
   margin: 0 0 1rem;
 }
 
-/* line 115, scss/mixin/_global.scss */
+/* line 121, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -289,24 +290,24 @@ pre {
   max-width: 100%;
 }
 
-/* line 128, scss/mixin/_global.scss */
+/* line 135, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 code, kbd, tt, var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 131, scss/mixin/_global.scss */
+/* line 139, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #666666;
   cursor: help;
 }
 
-/* line 135, scss/mixin/_global.scss */
+/* line 144, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 140, scss/mixin/_global.scss */
+/* line 150, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 sup,
 sub {
   font-size: 75%;
@@ -316,43 +317,43 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 147, scss/mixin/_global.scss */
+/* line 157, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 150, scss/mixin/_global.scss */
+/* line 160, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 sub {
   top: .5ex;
 }
 
-/* line 153, scss/mixin/_global.scss */
+/* line 163, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 small {
   font-size: 75%;
 }
 
-/* line 157, scss/mixin/_global.scss */
+/* line 167, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 big {
   font-size: 125%;
 }
 
-/* line 161, scss/mixin/_global.scss */
+/* line 171, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 figure {
   margin: 0;
 }
 
-/* line 165, scss/mixin/_global.scss */
+/* line 175, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 170, scss/mixin/_global.scss */
+/* line 180, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 th {
   font-weight: bold;
 }
 
-/* line 173, scss/mixin/_global.scss */
+/* line 183, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 button, input, select, textarea {
   font-size: 100%;
   /* Corrects font size not being inherited in all browsers */
@@ -364,7 +365,7 @@ button, input, select, textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-/* line 180, scss/mixin/_global.scss */
+/* line 190, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 button, input {
   line-height: normal;
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
@@ -372,7 +373,7 @@ button, input {
   /* Corrects inner spacing displayed oddly in IE6/7 */
 }
 
-/* line 185, scss/mixin/_global.scss */
+/* line 195, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 button, .menu-toggle, html input[type="button"], input[type="reset"], input[type="submit"] {
   border: 1px solid #ccc;
   border-color: #ccc #ccc #bbb #ccc;
@@ -394,7 +395,7 @@ button, .menu-toggle, html input[type="button"], input[type="reset"], input[type
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 204, scss/mixin/_global.scss */
+/* line 214, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 button:hover, .menu-toggle:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa #bbb;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
@@ -402,7 +403,7 @@ button:hover, .menu-toggle:hover, html input[type="button"]:hover, input[type="r
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
-/* line 213, scss/mixin/_global.scss */
+/* line 223, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 .menu-toggle:focus, button:focus, html input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
 button:active, .menu-toggle:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
   border-color: #aaa #bbb #bbb #bbb;
@@ -411,7 +412,7 @@ button:active, .menu-toggle:active, html input[type="button"]:active, input[type
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* line 220, scss/mixin/_global.scss */
+/* line 230, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* Addresses box sizing set to content-box in IE8/9 */
@@ -419,7 +420,7 @@ input[type="checkbox"], input[type="radio"] {
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 225, scss/mixin/_global.scss */
+/* line 235, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -429,38 +430,38 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 232, scss/mixin/_global.scss */
+/* line 242, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 236, scss/mixin/_global.scss */
+/* line 246, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
   border: 0;
   padding: 0;
 }
 
-/* line 241, scss/mixin/_global.scss */
+/* line 251, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type=text], input[type=email], textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
 
-/* line 247, scss/mixin/_global.scss */
+/* line 257, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
   color: #111;
 }
 
-/* line 251, scss/mixin/_global.scss */
+/* line 261, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 input[type=text], input[type=email] {
   padding: 3px;
   padding: 0.1875rem;
 }
 
-/* line 256, scss/mixin/_global.scss */
+/* line 266, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -472,22 +473,22 @@ textarea {
 }
 
 /* Links */
-/* line 265, scss/mixin/_global.scss */
+/* line 275, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 a {
   color: royalblue;
   text-decoration: none;
 }
-/* line 269, scss/mixin/_global.scss */
+/* line 279, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 a:visited {
   color: #3f4f7f;
 }
-/* line 272, scss/mixin/_global.scss */
+/* line 282, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
 
 /* Alignment */
-/* line 278, scss/mixin/_global.scss */
+/* line 288, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 .alignleft {
   display: inline;
   float: left;
@@ -495,7 +496,7 @@ a:hover, a:focus, a:active {
   margin-right: 1rem;
 }
 
-/* line 284, scss/mixin/_global.scss */
+/* line 294, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 .alignright {
   display: inline;
   float: right;
@@ -503,7 +504,7 @@ a:hover, a:focus, a:active {
   margin-left: 1rem;
 }
 
-/* line 290, scss/mixin/_global.scss */
+/* line 300, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/mixin/_global.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -513,7 +514,7 @@ a:hover, a:focus, a:active {
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
-/* line 5, scss/grid/_1140.scss */
+/* line 5, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .container, .site {
   padding-left: 20px;
   padding-right: 20px;
@@ -521,7 +522,7 @@ a:hover, a:focus, a:active {
   padding-right: 1.25rem;
 }
 
-/* line 24, scss/grid/_1140.scss */
+/* line 25, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row {
   width: 100%;
   max-width: 1140px;
@@ -532,91 +533,92 @@ a:hover, a:focus, a:active {
   overflow: hidden;
   padding: 5px;
   padding: 0.3125rem;
+  padding-bottom: 0;
 }
 
-/* line 28, scss/grid/_1140.scss */
+/* line 29, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .row {
   padding: 0;
 }
 
-/* line 32, scss/grid/_1140.scss */
+/* line 33, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
   margin-right: 3.8%;
   float: left;
   min-height: 1px;
 }
 
-/* line 38, scss/grid/_1140.scss */
+/* line 39, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .onecol {
   width: 4.85%;
 }
 
-/* line 42, scss/grid/_1140.scss */
+/* line 43, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .twocol {
   width: 13.45%;
 }
 
-/* line 46, scss/grid/_1140.scss */
+/* line 47, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .threecol {
   width: 22.05%;
 }
 
-/* line 50, scss/grid/_1140.scss */
+/* line 51, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .fourcol {
   width: 30.75%;
 }
 
-/* line 54, scss/grid/_1140.scss */
+/* line 55, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .fivecol {
   width: 39.45%;
 }
 
-/* line 58, scss/grid/_1140.scss */
+/* line 59, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .sixcol {
   width: 48%;
 }
 
-/* line 62, scss/grid/_1140.scss */
+/* line 63, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .sevencol {
   width: 56.75%;
 }
 
-/* line 66, scss/grid/_1140.scss */
+/* line 67, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .eightcol {
   width: 65.4%;
 }
 
-/* line 70, scss/grid/_1140.scss */
+/* line 71, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .ninecol {
   width: 74.05%;
 }
 
-/* line 74, scss/grid/_1140.scss */
+/* line 75, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .tencol {
   width: 82.7%;
 }
 
-/* line 78, scss/grid/_1140.scss */
+/* line 79, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .elevencol {
   width: 91.35%;
 }
 
-/* line 82, scss/grid/_1140.scss */
+/* line 83, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .row .twelvecol, .twelvecol {
   width: 100%;
 }
 
-/* line 86, scss/grid/_1140.scss */
+/* line 87, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 .last {
   margin-right: 0px;
 }
 
-/* line 90, scss/grid/_1140.scss */
+/* line 91, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 94, scss/grid/_1140.scss */
+/* line 95, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
 img {
   height: auto;
 }
@@ -624,14 +626,14 @@ img {
 /* Smaller screens */
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
-  /* line 125, scss/grid/_1140.scss */
+  /* line 126, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
   body {
     font-size: 16px;
     font-size: 1rem;
     -webkit-text-size-adjust: none;
   }
 
-  /* line 131, scss/grid/_1140.scss */
+  /* line 132, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
   .row, body, .container, .site {
     width: 100%;
     min-width: 0;
@@ -641,7 +643,7 @@ img {
     padding-right: 0px;
   }
 
-  /* line 140, scss/grid/_1140.scss */
+  /* line 141, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.scss */
   .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
     width: auto;
     float: none;
@@ -653,57 +655,57 @@ img {
     padding-right: 1.25rem;
   }
 }
-/* line 1, scss/grid/_1140.ie.scss */
+/* line 1, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .onecol {
   width: 4.7%;
 }
 
-/* line 5, scss/grid/_1140.ie.scss */
+/* line 5, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .twocol {
   width: 13.2%;
 }
 
-/* line 9, scss/grid/_1140.ie.scss */
+/* line 9, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .threecol {
   width: 22.05%;
 }
 
-/* line 13, scss/grid/_1140.ie.scss */
+/* line 13, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .fourcol {
   width: 30.6%;
 }
 
-/* line 17, scss/grid/_1140.ie.scss */
+/* line 17, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .fivecol {
   width: 39%;
 }
 
-/* line 21, scss/grid/_1140.ie.scss */
+/* line 21, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .sixcol {
   width: 48%;
 }
 
-/* line 25, scss/grid/_1140.ie.scss */
+/* line 25, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .sevencol {
   width: 56.75%;
 }
 
-/* line 29, scss/grid/_1140.ie.scss */
+/* line 29, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .eightcol {
   width: 61.6%;
 }
 
-/* line 33, scss/grid/_1140.ie.scss */
+/* line 33, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .ninecol {
   width: 74.05%;
 }
 
-/* line 37, scss/grid/_1140.ie.scss */
+/* line 37, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .tencol {
   width: 82%;
 }
 
-/* line 41, scss/grid/_1140.ie.scss */
+/* line 41, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/grid/_1140.ie.scss */
 .ie .row .elevencol {
   width: 91.35%;
 }
@@ -949,32 +951,34 @@ hr-footer {
 
 /* Start all sections */
 /* Header */
-/* line 2, scss/sections/_header.scss */
+/* line 2, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header {
-  padding: 24px 0;
-  padding: 1.5rem 0;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
-/* line 6, scss/sections/_header.scss */
+/* line 8, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header h1, .site-header h2 {
   text-align: center;
 }
-/* line 9, scss/sections/_header.scss */
+/* line 11, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header h1 a, .site-header h2 a {
   color: #515151;
   display: inline-block;
   text-decoration: none;
 }
-/* line 14, scss/sections/_header.scss */
+/* line 16, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header h1 a:hover, .site-header h2 a:hover {
   color: #21759b;
 }
-/* line 20, scss/sections/_header.scss */
+/* line 22, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header h1 {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2;
 }
-/* line 26, scss/sections/_header.scss */
+/* line 28, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .site-header h2 {
   font-weight: normal;
   font-size: 13px;
@@ -983,7 +987,7 @@ hr-footer {
   color: #777;
 }
 
-/* line 35, scss/sections/_header.scss */
+/* line 37, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_header.scss */
 .header-image {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -992,24 +996,24 @@ hr-footer {
 /* =Menu
 ----------------------------------------------- */
 /* Small menu */
-/* line 5, scss/sections/_menu.scss */
+/* line 5, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .menu-toggle {
   cursor: pointer;
 }
 
-/* line 8, scss/sections/_menu.scss */
+/* line 8, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-small-navigation .menu {
   display: none;
 }
 
 /* Navigation Menu */
-/* line 13, scss/sections/_menu.scss */
+/* line 13, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation {
   margin-top: 24px;
   margin-top: 1.5rem;
   text-align: center;
 }
-/* line 18, scss/sections/_menu.scss */
+/* line 18, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation li {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -1017,33 +1021,33 @@ hr-footer {
   font-size: 0.75rem;
   line-height: 1.42857143;
 }
-/* line 26, scss/sections/_menu.scss */
+/* line 26, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation a {
   color: #5e5e5e;
 }
-/* line 28, scss/sections/_menu.scss */
+/* line 28, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation a:hover {
   color: #21759b;
 }
 
-/* line 34, scss/sections/_menu.scss */
+/* line 34, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
   display: none;
 }
 
-/* line 39, scss/sections/_menu.scss */
+/* line 39, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-small-navigation ul {
   list-style: none;
   margin-left: 20px;
   margin-left: 1.25rem;
 }
 
-/* line 46, scss/sections/_menu.scss */
+/* line 46, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation ul.nav-menu.toggled-on, .menu-toggle {
   display: inline-block;
 }
 
-/* line 50, scss/sections/_menu.scss */
+/* line 50, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .site-header h1.menu-toggle {
   font-size: 16px;
   font-size: 1rem;
@@ -1052,7 +1056,7 @@ hr-footer {
   margin-right: 20px;
 }
 
-/* line 59, scss/sections/_menu.scss */
+/* line 59, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation ul.nav-menu {
   list-style: none;
   margin: 0;
@@ -1065,7 +1069,7 @@ hr-footer {
   	background-color: transparant;
   }*/
 }
-/* line 63, scss/sections/_menu.scss */
+/* line 63, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
 .main-navigation ul.nav-menu ul {
   list-style: none;
   margin: 0;
@@ -1073,7 +1077,7 @@ hr-footer {
 
 /* Minimum width of 768 pixels. */
 @media screen and (min-width: 768px) {
-  /* line 84, scss/sections/_menu.scss */
+  /* line 84, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     border-bottom: 1px solid #ededed;
@@ -1083,12 +1087,17 @@ hr-footer {
     width: 100%;
   }
 
-  /* line 93, scss/sections/_menu.scss */
+  /* line 92, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
+  .main-navigation {
+    border-top: 3px solid #F5F5F5;
+    border-bottom: 3px solid #F5F5F5;
+  }
+  /* line 97, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation ul {
     margin: 0;
     text-indent: 0;
   }
-  /* line 98, scss/sections/_menu.scss */
+  /* line 110, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li {
     margin: 0 40px 0 0;
     margin: 0 2.5rem 0 0;
@@ -1096,7 +1105,7 @@ hr-footer {
     display: inline-block;
     text-decoration: none;
   }
-  /* line 105, scss/sections/_menu.scss */
+  /* line 117, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li a {
     display: inline-block;
     text-decoration: none;
@@ -1105,11 +1114,11 @@ hr-footer {
     line-height: 3.692307692;
     text-transform: uppercase;
   }
-  /* line 113, scss/sections/_menu.scss */
+  /* line 125, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li a:hover {
     color: #000;
   }
-  /* line 118, scss/sections/_menu.scss */
+  /* line 130, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li ul {
     display: none;
     margin: 0;
@@ -1117,19 +1126,19 @@ hr-footer {
     position: absolute;
     top: 100%;
   }
-  /* line 125, scss/sections/_menu.scss */
+  /* line 137, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li ul li {
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 0;
   }
-  /* line 132, scss/sections/_menu.scss */
+  /* line 144, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li ul ul {
     top: 0;
     left: 100%;
   }
-  /* line 137, scss/sections/_menu.scss */
+  /* line 149, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li ul li a {
     background: #efefef;
     border-bottom: 1px solid #ededed;
@@ -1142,18 +1151,18 @@ hr-footer {
     width: 180px;
     width: 11.25rem;
   }
-  /* line 149, scss/sections/_menu.scss */
+  /* line 161, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li ul li a:hover {
     background: #e3e3e3;
     color: #444;
   }
-  /* line 156, scss/sections/_menu.scss */
+  /* line 168, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation li:hover > ul {
     border-left: 0;
     display: block;
   }
 
-  /* line 166, scss/sections/_menu.scss */
+  /* line 178, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .main-navigation .current-menu-item > a,
   .main-navigation .current-menu-ancestor > a,
   .main-navigation .current_page_item > a,
@@ -1162,62 +1171,62 @@ hr-footer {
     font-weight: bold;
   }
 
-  /* line 170, scss/sections/_menu.scss */
+  /* line 182, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_menu.scss */
   .menu-toggle {
     display: none;
   }
 }
 /* =Navigation
 ----------------------------------------------- */
-/* line 6, scss/sections/_navigation.scss */
+/* line 6, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .site-content .site-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 11, scss/sections/_navigation.scss */
+/* line 11, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .site-content .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
-/* line 17, scss/sections/_navigation.scss */
+/* line 17, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .site-content .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 22, scss/sections/_navigation.scss */
+/* line 22, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .site-content nav {
   clear: both;
   line-height: 2;
   overflow: hidden;
 }
 
-/* line 30, scss/sections/_navigation.scss */
+/* line 30, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 #nav-above {
   padding: 24px 0;
   padding: 1.5rem 0;
   display: none;
 }
 
-/* line 36, scss/sections/_navigation.scss */
+/* line 36, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .paged #nav-above {
   display: block;
 }
 
-/* line 40, scss/sections/_navigation.scss */
+/* line 40, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .nav-previous, .previous-image {
   float: left;
   width: 50%;
 }
 
-/* line 45, scss/sections/_navigation.scss */
+/* line 45, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .nav-next, .next-image {
   float: right;
   text-align: right;
   width: 50%;
 }
 
-/* line 51, scss/sections/_navigation.scss */
+/* line 51, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_navigation.scss */
 .nav-single + .comments-area, #comment-nav-above {
   margin: 48px 0;
   margin: 3rem 0;
@@ -1226,40 +1235,40 @@ hr-footer {
 /* Start Main Content */
 /* =Content
 ----------------------------------------------- */
-/* line 7, scss/sections/_content.scss */
+/* line 7, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .hentry {
   margin: 0 0 16px;
   margin: 0 0 1rem;
 }
 
-/* line 12, scss/sections/_content.scss */
+/* line 12, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .entry-header {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
 
-/* line 17, scss/sections/_content.scss */
+/* line 17, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .entry-meta {
   clear: both;
 }
 
-/* line 21, scss/sections/_content.scss */
+/* line 21, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .byline {
   display: none;
 }
 
-/* line 25, scss/sections/_content.scss */
+/* line 25, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .single .byline, .group-blog .byline {
   display: inline;
 }
 
-/* line 29, scss/sections/_content.scss */
+/* line 29, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .entry-content, .entry-summary {
   margin: 16px 0 0;
   margin: 1rem 0 0;
 }
 
-/* line 34, scss/sections/_content.scss */
+/* line 34, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_content.scss */
 .page-links {
   clear: both;
   margin: 0 0 16px;
@@ -1268,7 +1277,7 @@ hr-footer {
 
 /* =Asides
 ----------------------------------------------- */
-/* line 5, scss/sections/types/_aside.scss */
+/* line 5, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_aside.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -1276,7 +1285,7 @@ hr-footer {
 
 /* =Media
 ----------------------------------------------- */
-/* line 7, scss/sections/types/_media.scss */
+/* line 7, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-header img,
 .entry-content img,
 .comment-content img,
@@ -1285,7 +1294,7 @@ hr-footer {
   /* Fluid images for posts, comments, and widgets */
 }
 
-/* line 13, scss/sections/types/_media.scss */
+/* line 13, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-header img,
 .entry-content img,
 img[class*="align"],
@@ -1294,7 +1303,7 @@ img[class*="wp-image-"] {
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 
-/* line 18, scss/sections/types/_media.scss */
+/* line 18, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-header img,
 .entry-content img,
 img.size-full {
@@ -1303,7 +1312,7 @@ img.size-full {
   /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 
-/* line 23, scss/sections/types/_media.scss */
+/* line 23, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
   border: none;
@@ -1312,49 +1321,49 @@ img.size-full {
   padding: 0;
 }
 
-/* line 30, scss/sections/types/_media.scss */
+/* line 30, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .wp-caption {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   max-width: 100%;
 }
-/* line 34, scss/sections/types/_media.scss */
+/* line 34, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .wp-caption.aligncenter, .wp-caption.alignleft, .wp-caption.alignright {
   margin-bottom: 1.5em;
 }
-/* line 38, scss/sections/types/_media.scss */
+/* line 38, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .wp-caption img {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
-/* line 44, scss/sections/types/_media.scss */
+/* line 44, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 49, scss/sections/types/_media.scss */
+/* line 49, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .wp-caption-text {
   text-align: center;
 }
 
-/* line 53, scss/sections/types/_media.scss */
+/* line 53, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-content .gallery {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 57, scss/sections/types/_media.scss */
+/* line 57, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-content .gallery a img {
   border: none;
   height: auto;
   max-width: 90%;
 }
-/* line 63, scss/sections/types/_media.scss */
+/* line 63, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 .site-content .gallery dd {
   margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 71, scss/sections/types/_media.scss */
+/* line 71, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_media.scss */
 embed,
 iframe,
 object {
@@ -1362,15 +1371,74 @@ object {
 }
 
 /* CSS Document */
-/* line 4, scss/sections/types/_event.scss */
+/* line 4, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
 .single-sg_event .sg_event p {
   font-size: 16px;
   font-size: 1rem;
   line-height: 2;
 }
+/* line 10, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.single-sg_event .sg_event .speakers {
+  font-weight: bold;
+}
+
+/* line 16, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-speakers .speaker-title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* line 22, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-speakers .speaker-bio {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+/* line 28, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-speakers br {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+/* line 34, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-social {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 42, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-social .user-event {
+  margin: 0;
+  padding: 0;
+}
+/* line 47, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-social .facebook {
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
+  margin-top: 0.1875rem;
+  padding-top: 3px;
+  padding-top: 0.1875rem;
+}
+
+/* line 57, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-location {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+/* line 61, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-location .location-map {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* line 67, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_event.scss */
+.event-recording {
+  width: 100%;
+  height: 600px;
+}
 
 /* CSS Document */
-/* line 4, scss/sections/types/_location.scss */
+/* line 4, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/types/_location.scss */
 .single-sg_location .sg_location p {
   font-size: 16px;
   font-size: 1rem;
@@ -1379,23 +1447,23 @@ object {
 
 /* End Main Content */
 /* Author profiles */
-/* line 3, scss/sections/_author.scss */
+/* line 3, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_author.scss */
 .author .archive-header {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 9, scss/sections/_author.scss */
+/* line 9, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_author.scss */
 .author.archive .author-info {
   border-top: 0;
   margin: 0 0 48px;
   margin: 0 0 3rem;
 }
-/* line 15, scss/sections/_author.scss */
+/* line 15, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_author.scss */
 .author.archive .author-avatar {
   margin-top: 0;
 }
 
-/* line 21, scss/sections/_author.scss */
+/* line 21, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_author.scss */
 .author-info {
   border-top: 1px solid #ededed;
   margin: 24px 0;
@@ -1405,7 +1473,7 @@ object {
   overflow: hidden;
 }
 
-/* line 30, scss/sections/_author.scss */
+/* line 30, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_author.scss */
 .author-description p {
   color: #777;
   font-size: 13px;
@@ -1418,13 +1486,13 @@ object {
 /* =Widgets
 ----------------------------------------------- */
 /* Search widget */
-/* line 4, scss/sections/_widgets.scss */
+/* line 4, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 #searchsubmit {
   display: none;
 }
 
 /* Sidebar */
-/* line 11, scss/sections/_widgets.scss */
+/* line 11, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget {
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -1433,52 +1501,52 @@ object {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
-/* line 19, scss/sections/_widgets.scss */
+/* line 19, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget h3 {
   margin-bottom: 8px;
   margin-bottom: .5rem;
 }
-/* line 24, scss/sections/_widgets.scss */
+/* line 24, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget p, .widget li, .widget .textwidget {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.846153846;
 }
-/* line 30, scss/sections/_widgets.scss */
+/* line 30, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget p {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 35, scss/sections/_widgets.scss */
+/* line 35, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget a {
   color: #777;
 }
-/* line 37, scss/sections/_widgets.scss */
+/* line 37, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget a:hover {
   color: #21759b;
 }
-/* line 42, scss/sections/_widgets.scss */
+/* line 42, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget ul {
   list-style: none;
   margin: 0;
 }
-/* line 46, scss/sections/_widgets.scss */
+/* line 46, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .widget ul ul {
   margin: 0 0 0 16px;
   margin: 0 0 0 1rem;
 }
 
-/* line 54, scss/sections/_widgets.scss */
+/* line 54, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .textwidget ul {
   list-style: disc inside;
   margin: 0;
 }
-/* line 60, scss/sections/_widgets.scss */
+/* line 60, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .textwidget li {
   margin-left: 2.25rem;
 }
 
-/* line 66, scss/sections/_widgets.scss */
+/* line 66, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .cat-item, .location-item, .tagcloud > a {
   display: inline-block;
   margin-right: 8px;
@@ -1487,7 +1555,7 @@ object {
   margin-bottom: 0.5rem;
 }
 
-/* line 74, scss/sections/_widgets.scss */
+/* line 74, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .cat-item, .location-item > a, .tagcloud > a {
   background-color: #E6E6E6;
   padding: 5px;
@@ -1496,102 +1564,140 @@ object {
   font-size: 12px !important;
   font-size: 0.75rem !important;
 }
-/* line 82, scss/sections/_widgets.scss */
+/* line 82, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
 .cat-item:hover, .location-item > a:hover, .tagcloud > a:hover {
   background-color: transparent;
 }
 
+/* line 87, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
+#tertiary, #secondary.as-tertiary {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+@media handheld, only screen and (min-width: 767px) {
+  /* line 99, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_widgets.scss */
+  #tertiary, #secondary.as-tertiary {
+    padding: 24px 0 24px 24px;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    width: auto;
+  }
+}
+/* CSS Document */
+/* line 2, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_footer.scss */
+footer, footer.row {
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+
+/* line 9, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/sections/_footer.scss */
+footer.entry-meta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  background-color: #F8F8F8;
+  border: 2px double #EEE;
+  padding: 8px;
+  padding: 0.5rem;
+}
+
 /* End all sections */
 /* Start Templates */
-/* line 2, scss/templates/_front-page.scss */
+/* line 2, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .template-front-page .entry-content {
   margin: 0;
 }
 
-/* line 7, scss/templates/_front-page.scss */
+/* line 7, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 12, scss/templates/_front-page.scss */
+/* line 12, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li {
   margin-bottom: 16px;
   margin-bottom: 1rem;
+  clear: left;
 }
-/* line 16, scss/templates/_front-page.scss */
+/* line 17, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li .entry-header {
   margin-top: 0;
 }
-/* line 20, scss/templates/_front-page.scss */
+/* line 21, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li h2, .events li h3 {
   display: block;
 }
-/* line 24, scss/templates/_front-page.scss */
+/* line 25, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li h2 {
-  position: relative;
-  top: 3px;
-  top: 0.1875rem;
-  margin-right: 3px;
-  margin-right: 0.1875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
-/* line 32, scss/templates/_front-page.scss */
-.events li h3, .events li .datetime {
+/* line 30, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
+.events li h3, .events li .datetime, .events li .location {
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 37, scss/templates/_front-page.scss */
+/* line 35, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li hgroup {
   display: block;
   margin: 0;
 }
-/* line 42, scss/templates/_front-page.scss */
+/* line 40, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li .meta {
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
-/* line 47, scss/templates/_front-page.scss */
+/* line 45, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li header > div {
   padding-left: 0 !important;
   padding-right: 0 !important;
   min-height: 128px;
   min-height: 8rem;
 }
-/* line 54, scss/templates/_front-page.scss */
+/* line 52, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li img {
   margin-top: 8px;
   margin-top: 0.5rem;
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
-/* line 61, scss/templates/_front-page.scss */
+/* line 59, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
 .events li p {
   margin-bottom: 0;
 }
 
 @media handheld, only screen and (min-width: 767px) {
-  /* line 68, scss/templates/_front-page.scss */
+  /* line 66, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
   .events {
     padding-left: 16px;
     padding-left: 0rem;
     padding-right: 16px;
     padding-right: 1rem;
   }
-  /* line 75, scss/templates/_front-page.scss */
+  /* line 73, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
   .events li img {
     margin-bottom: 0;
   }
-  /* line 79, scss/templates/_front-page.scss */
+  /* line 77, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
   .events li h2 {
     display: inline-block;
+    margin-right: 5px;
+    margin-right: 0.3125rem;
   }
-  /* line 83, scss/templates/_front-page.scss */
+  /* line 83, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
   .events li h3 {
     display: inline-block;
-    padding: 5px;
-    padding: 0.3125rem;
   }
-  /* line 92, scss/templates/_front-page.scss */
+  /* line 92, C:/Users/Derk-Jan/My Websites/sg.tudelft.nl/wp-content/themes/studiumgenerale2013/scss/templates/_front-page.scss */
   .events li header > div {
     min-height: 160px;
     min-height: 10rem;

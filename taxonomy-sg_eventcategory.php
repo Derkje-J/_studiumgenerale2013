@@ -18,7 +18,7 @@ get_header(); ?>
 				<header class="page-header">
 					<h1 class="page-title">
 						<?php
-							if ( is_category() ) {
+							if ( is_category() || is_tax( 'sg_eventcategory' ) ) {
 								printf( __( 'Category Archives: %s', 'sg2013' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 							} elseif ( is_tag() ) {
@@ -66,23 +66,30 @@ get_header(); ?>
 						}
 					?>
 				</header><!-- .page-header -->
-
+				
 				<?php sg2013_content_nav( 'nav-above' ); ?>
+                <?php $types = array('sg_location' => 'location-li' , 'sg_event' => 'event-li'); ?>
 
+                <ul class="events">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
+					<li class="event clear">
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-
-						get_template_part( 'content', get_post_format() );
+						
+						get_template_part( 'content' ,
+							in_array( get_post_type(), array_keys($types)) ? $types[get_post_type()] : 'single' )
+						;
 					?>
+                    </li>
 
 				<?php endwhile; ?>
-
+				</ul>
+                
 				<?php sg2013_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
@@ -94,5 +101,5 @@ get_header(); ?>
 			</div><!-- #content .site-content -->
 		</section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'calendar' ); ?>
 <?php get_footer(); ?>

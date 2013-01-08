@@ -1,2 +1,22 @@
 /* CSS Document */
+footer, footer.row {
+	font-size: 12px;
+	font-size: 0.75rem;
+	padding-top: 16px;
+	padding-top: 1rem;
+}
 
+footer.entry-meta {
+	font-size: 14px;
+	font-size: 0.875rem;
+	margin-top: 8px;
+	margin-top: 0.5rem;
+	background-color: #F8F8F8;
+	border: 2px double #EEE;
+	padding: 8px;
+	padding: 0.5rem;
+}
+
+footer > div {
+		
+}

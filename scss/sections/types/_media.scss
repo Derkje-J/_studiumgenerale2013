@@ -28,7 +28,7 @@ img.size-full {
 }
 
 .wp-caption {
-	border: 1px solid #ccc;
+	border: 1px solid $captionborder;
 	max-width: 100%;
 	
 	&.aligncenter, &.alignleft, &.alignright {

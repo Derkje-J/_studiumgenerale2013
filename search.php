@@ -18,11 +18,12 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<?php sg2013_content_nav( 'nav-above' ); ?>
-
+				
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'search' ); ?>
+					
+					<?php $part = 'search';//get_post_type();  ?>
+					<?php get_template_part( 'content', $part ); ?>
 
 				<?php endwhile; ?>
 
@@ -38,4 +39,5 @@ get_header(); ?>
 		</section><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
+<?php get_sidebar('404'); ?>
 <?php get_footer(); ?>

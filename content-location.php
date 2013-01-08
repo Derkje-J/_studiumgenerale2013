@@ -1,11 +1,9 @@
 <?php
 /**
- * The template for displaying events in the event lists on index and archive pages
+ * The template used for displaying location content for single-sg_location
  *
- * Learn more: http://codex.wordpress.org/Post_Formats
- *
- * @package WordPress
- * @subpackage Studium_Generale_2012
+ * @package Studium Generale 2013
+ * @since Studium Generale 2013 1.0
  */
  
 if (!defined("SG_EVENTS_VERSION")) {

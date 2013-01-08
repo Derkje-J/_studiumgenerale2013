@@ -1,14 +1,14 @@
-# Copyright (C) 2012 Derk-Jan Karrenbeld & Marnix de Graaf
+# Copyright (C) 2013 Derk-Jan Karrenbeld & Marnix de Graaf
 # This file is distributed under the GNU General Public License.
 msgid ""
 msgstr ""
 "Project-Id-Version: Studium Generale 2013 1.1-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/studiumgenerale2013\n"
-"POT-Creation-Date: 2012-12-10 15:08:21+00:00\n"
+"POT-Creation-Date: 2013-01-07 08:38:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -30,31 +30,32 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive.php:22
+#: archive-sg_event.php:22 archive.php:22 taxonomy-sg_eventcategory.php:22
 msgid "Category Archives: %s"
 msgstr ""
 
-#: archive.php:25
+#: archive-sg_event.php:25 archive.php:25 taxonomy-sg_eventcategory.php:25
 msgid "Tag Archives: %s"
 msgstr ""
 
-#: archive.php:32
+#: archive-sg_event.php:32 archive.php:32 taxonomy-sg_eventcategory.php:32
 msgid "Author Archives: %s"
 msgstr ""
 
-#: archive.php:40
+#: archive-sg_event.php:40 archive.php:40 taxonomy-sg_eventcategory.php:40
 msgid "Daily Archives: %s"
 msgstr ""
 
-#: archive.php:43
+#: archive-sg_event.php:43 archive.php:43 taxonomy-sg_eventcategory.php:43
 msgid "Monthly Archives: %s"
 msgstr ""
 
-#: archive.php:46
+#: archive-sg_event.php:46 archive.php:46 taxonomy-sg_eventcategory.php:46
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: archive.php:49 sidebar.php:18
+#: archive-sg_event.php:49 archive.php:49 sidebar.php:18
+#: taxonomy-sg_eventcategory.php:49
 msgid "Archives"
 msgstr ""
 
@@ -80,49 +81,85 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: content-event-bar.php:3 content-event-li.php:12 content-event.php:12
-#: content-front-page.php:14 content-location-bar.php:3 content-location.php:12
-#: sidebar-calendar.php:12
+#: content-event-bar.php:10 content-event-li.php:12 content-event.php:12
+#: content-front-page.php:17 content-location-bar.php:10
+#: content-location-li.php:12 content-location.php:10 sidebar-calendar.php:12
 msgid "SG_EVENTS_VERSION is not defined. Please enable the events plugin."
 msgstr ""
 
-#: content-event-bar.php:14 content-event-li.php:34 content-event.php:26
-#: content-location.php:22 content.php:10 sidebar-calendar.php:20
-#: sidebar-calendar.php:23 sidebar-calendar.php:26
+#: content-event-bar.php:21 content-event-li.php:34 content-event.php:28
+#: content-location-li.php:28 content-location.php:20 content.php:10
 msgid "Permalink to %s"
 msgstr ""
 
-#: content-event-bar.php:46
+#: content-event-bar.php:22
+msgid "Social"
+msgstr ""
+
+#: content-event-bar.php:25
+msgid "Login"
+msgstr ""
+
+#: content-event-bar.php:25
+msgid "Login to apply."
+msgstr ""
+
+#: content-event-bar.php:33
+msgid "Details"
+msgstr ""
+
+#: content-event-bar.php:64
 msgid "No speaker information"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
 
-#: content-event.php:45 content-event.php:48 content-location.php:40
-#: content-location.php:43 content-single.php:25 content-single.php:28
+#: content-event.php:49 content-event.php:52 content-location.php:38
+#: content-location.php:41 content-single.php:25 content-single.php:28
 #: content.php:34 content.php:44
 msgid ", "
 msgstr ""
 
-#: content-event.php:53 content-location.php:48 content-single.php:33
+#: content-event.php:57 content-location.php:46 content-single.php:33
 msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 
-#: content-event.php:55 content-location.php:50 content-single.php:35
+#: content-event.php:59 content-location.php:48 content-single.php:35
 msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 
-#: content-event.php:61 content-location.php:56 content-single.php:41
+#: content-event.php:65 content-location.php:54 content-single.php:41
 msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 
-#: content-event.php:63 content-location.php:58 content-single.php:43
+#: content-event.php:67 content-location.php:56 content-single.php:43
 msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 
-#: content-event.php:77 content-location.php:72 content-page.php:18
+#: content-event.php:81 content-location.php:70 content-page.php:18
 #: content-single.php:57 content.php:59 image.php:34 image.php:100
 msgid "Edit"
+msgstr ""
+
+#: content-front-page.php:13
+msgid "Upcoming events"
+msgstr ""
+
+#: content-front-page.php:19
+msgid "class SG_EventShortcodes is not defined. Please enable the events plugin."
+msgstr ""
+
+#: content-location-bar.php:20
+msgid "Visit location website"
+msgstr ""
+
+#: content-location-bar.php:20
+msgid "Website"
+msgstr ""
+
+#: content-location-bar.php:23
+msgctxt "sg2013"
+msgid "No details"
 msgstr ""
 
 #: content-page.php:17 content-single.php:19 content.php:26 image.php:86
@@ -213,23 +250,7 @@ msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr ""
 
-#: functions.php:299
-msgid "Left Sidebar"
-msgstr ""
-
-#: functions.php:301
-msgid "The sidebar on the left (primary main sidebar)"
-msgstr ""
-
-#: functions.php:308
-msgid "Right Sidebar"
-msgstr ""
-
-#: functions.php:310
-msgid "The sidebar on the right (secondary main sidebar)"
-msgstr ""
-
-#: functions.php:400
+#: functions.php:383
 msgid "[more]"
 msgstr ""
 
@@ -438,6 +459,14 @@ msgstr ""
 msgid "Recordings of recent events"
 msgstr ""
 
+#: sidebar-calendar.php:55
+msgid "See this recording."
+msgstr ""
+
+#: sidebar-calendar.php:63
+msgid "No recordings found."
+msgstr ""
+
 #: sidebar.php:25
 msgid "Meta"
 msgstr ""
@@ -459,6 +488,10 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://derk-jan.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "collegerama"
 msgstr ""
 
 #. Template Name of the plugin/theme

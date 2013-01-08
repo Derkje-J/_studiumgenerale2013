@@ -20,23 +20,33 @@ get_header(); ?>
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'sg2013' ); ?></p>
 
 					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<div class="widget">
-						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'sg2013' ); ?></h2>
-						<ul>
-						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smilie */
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'sg2013' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+                    <br>
+                    
+                    <!--
+                    <aside class="row">
+                        <div class="fourcol widget-wrapper">
+                            <?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+                        </div>
+    
+                        <div class="widget fourcol">
+                            <h2 class="widgettitle"><?php _e( 'Most Used Categories', 'sg2013' ); ?></h2>
+                            <ul>
+                            <?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 0, 'hierarchical' => 0, 'title_li' => '', 'number' => 10 ) ); ?>
+                            </ul>
+                        </div><!-- .widget -->
+    <!--
+                        <div class="fourcol widget-wrapper last">
+                        <?php
+                        	/* translators: %1$s: smilie */
+                       	 $archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'sg2013' ), convert_smilies( ':)' ) ) . '</p>';
+                        	the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content");
+                        ?>
+                        </div>
+    
+                        <div class="fourcol widget-wrapper">
+                        <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+                        </div>
+                    </aside>-->
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 .post .error404 .not-found -->
@@ -44,4 +54,5 @@ get_header(); ?>
 		</div><!-- #content .site-content -->
 	</div><!-- #primary .content-area -->
 
+<?php get_sidebar('404'); ?>
 <?php get_footer(); ?>

@@ -22,11 +22,8 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<?php get_sidebar( 'calendar' ); ?>
 
-	        
-    <hr class="row">
+    <!-- <hr class="row"> -->
 
 	<?php get_sidebar( 'front' ); ?>
-   
-    <hr class="hr-front-footer hr-footer row">
     
 <?php get_footer(); ?>

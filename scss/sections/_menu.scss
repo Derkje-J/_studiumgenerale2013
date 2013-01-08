@@ -90,9 +90,21 @@
 	}
 	
 	.main-navigation {	
+	
+		border-top: 3px solid #F5F5F5;
+		border-bottom: 3px solid #F5F5F5;
+	
 		ul {
+			//background-color: #F5F5F5;
+			
 			margin: 0;
+			//margin-right: 24px;
 			text-indent: 0;
+			//padding-left: 24px;
+			//padding-left: 1.5rem;
+			//width: auto;		
+			//padding-right: 24px;
+			//padding-right: 1.5rem;
 		}
 		
 		li {
