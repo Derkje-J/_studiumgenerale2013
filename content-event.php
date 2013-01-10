@@ -15,10 +15,8 @@ if (!defined("SG_EVENTS_VERSION")) {
 
 $meta_data = get_post_custom(get_the_ID());
 $location = get_event_location();
-
-$meta_extra = isset($meta_data["sg_event_extra"]) ? unserialize($meta_data["sg_event_extra"][0]) : array();
-
-$show_header = isset($meta_data["sg_event_header"]) && strlen($meta_data["sg_event_header"][0]);
+$meta_extra = isset( $meta_data["sg_event_extra"] ) ? unserialize($meta_data["sg_event_extra"][0]) : array();
+$show_header = isset( $meta_data["sg_event_header"] ) && !( empty( $meta_data["sg_event_header"][0] ) );
  
  ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="ninecol last">
@@ -30,12 +28,26 @@ $show_header = isset($meta_data["sg_event_header"]) && strlen($meta_data["sg_eve
             </hgroup>     
         </div>  
         <div class="entry-thumbnail">
-        <?php if ( has_post_thumbnail() && $show_header) : ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-           
-               <?php the_post_thumbnail(array(850, 1000)); ?>
-            </a>
-       	<?php endif; ?>
+        <?php 
+		if ( $show_header ) :
+			 if ( function_exists( 'get_dj_fallback_thumbnail' ) ) : 
+			 	if ( $thumbnail = get_dj_fallback_thumbnail( NULL, array(850, 1000) ) ) :
+			 	?>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+                       <?php echo $thumbnail; ; ?>
+                    </a>
+            <?php 
+				endif;
+			elseif ( has_post_thumbnail() ) : 
+			?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+                   <?php echo the_post_thumbnail( array(850, 1000) ); ?>
+                </a>
+            <?php 
+			endif;
+		endif;
+		?>
+       
         </div>
     </header><!-- .entry-header -->
     <div class="entry-content">

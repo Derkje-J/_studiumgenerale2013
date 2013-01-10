@@ -8,14 +8,26 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	padding-top: 16px;
+	padding-top: 1rem;
+	
 	
 	li {
 		margin-bottom: 16px;
 		margin-bottom: 1rem;
 		clear: left;
 		
+		border: 1px solid darken( #f5f5f5, 10% );
+		background-color: #f5f5f5;
+		padding: 16px;
+		padding: 1rem;
+		padding-bottom: 10px;
+		padding-bottom: .625rem;
+		
+		height: 100%; // ie fix
+		
 		.entry-header {
-			margin-top: 0;	
+			margin: 0;
 		}
 		
 		h2, h3 {
@@ -50,24 +62,22 @@
 		} 
 		
 		img {
-			margin-top: 8px;
-			margin-top: 0.5rem;
-			margin-bottom: 8px;
-			margin-bottom: 0.5rem;	
+			//margin-top: 8px;
+			//margin-top: 0.5rem;
+			//margin-bottom: 8px;
+			//margin-bottom: 0.5rem;	
 		}
 		
 		p {
 			margin-bottom: 0;
+			font-size: 14px;
+			font-size: .875rem;
 		}
 	}
 }
 
 @media handheld, only screen and (min-width: 767px) {
 	.events {
-		padding-left: 16px;
-		padding-left: 0rem;
-		padding-right: 16px;
-		padding-right: 1rem;
 		
 		li {
 			img {

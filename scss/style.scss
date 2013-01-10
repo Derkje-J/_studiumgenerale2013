@@ -33,9 +33,23 @@ and Blueprint http://www.blueprintcss.org/
 	position: absolute !important;
 }
 
+body { 
+	background-color: #E6E6E6;
+}
+
 /* Add the grid to the wordpress default classes */
 .site {
 	@extend .container;	
+	
+	margin: 0 auto;
+	width: auto;
+	max-width: 1150px;
+	max-width: 71.875rem;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
 }
 
 .site-header, .site-footer {
@@ -45,6 +59,12 @@ and Blueprint http://www.blueprintcss.org/
 @media handheld, only screen and (max-width: 767px) {
 	.site-header, .site-footer {
 		@include mobile-col;
+	}
+	
+	.site {
+		max-width: 768px;
+		max-width: 48rem;
+		width: auto;
 	}
 }
 
@@ -154,8 +174,8 @@ img.header-image,
 .author-avatar img,
 img.wp-post-image {
 	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border-radius: 3px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	///border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .wp-caption {

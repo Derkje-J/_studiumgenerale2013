@@ -16,11 +16,23 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div class="entry-thumbnail fivecol">
-        <?php if ( has_post_thumbnail()) : ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-               <?php the_post_thumbnail( 'event-li-thumb' ); //288, 180) ); ?>
-            </a>
-       	<?php endif; ?>
+        <?php 
+		if ( function_exists( 'get_dj_fallback_thumbnail' ) ) : 
+			if ( $thumbnail = get_dj_fallback_thumbnail( NULL, array(850, 1000) ) ) :
+			?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+				   <?php echo $thumbnail; ; ?>
+				</a>
+		<?php 
+			endif;
+		elseif ( has_post_thumbnail() ) : 
+		?>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+			   <?php echo the_post_thumbnail( array(850, 1000) ); ?>
+			</a>
+		<?php 
+		endif; 
+		?>
         </div>
  
  		<div class="location-data sevencol last">

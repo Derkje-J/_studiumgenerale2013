@@ -8,6 +8,7 @@
  * @since Studium Generale 2013 1.0
  */
 
+$do_404_results = false;
 get_header(); ?>
 
 		<section id="primary" class="content-area eightcol">
@@ -87,7 +88,12 @@ get_header(); ?>
 
 			<?php else : ?>
 
-				<?php get_template_part( 'no-results', 'archive' ); ?>
+				<?php 
+				
+				get_template_part( 'no-results', 'archive' ); 
+				$do_404_results = true;
+				
+				?>
 
 			<?php endif; ?>
 
@@ -95,4 +101,5 @@ get_header(); ?>
 		</section><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
+<?php if ( !empty( $do_404_results ) ) get_sider_bar( '404' ); ?>
 <?php get_footer(); ?>

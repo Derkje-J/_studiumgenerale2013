@@ -22,11 +22,22 @@ $meta_extra = get_event_extra();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div class="entry-thumbnail fivecol">
-        <?php if ( has_post_thumbnail()) : ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-               <?php the_post_thumbnail( 'event-li-thumb' ); //288, 180) ); ?>
+        <?php 
+		if ( function_exists( 'get_dj_fallback_thumbnail' ) ) : 
+			if ( $thumbnail = get_dj_fallback_thumbnail( NULL, 'event-li-thumb' ) ) : ?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+                   <?php echo $thumbnail; ; ?>
+                </a>
+		<?php 
+			endif;
+		elseif ( has_post_thumbnail() ) : 
+		?>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+			   <?php echo the_post_thumbnail( 'event-li-thumb' ); ?>
             </a>
-       	<?php endif; ?>
+		<?php 
+		endif;
+		?>
         </div>
  
  		<div class="event-data sevencol last">

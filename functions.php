@@ -433,4 +433,26 @@ function new_excerpt_more($more) {
 	return ' ... <a href="'. get_permalink($post->ID) . '">'.__('[more]', 'sg2013').'</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * Adds a custom login logo to the login page!
+ */
+function custom_login_logo() {
+	$path = '/images/logo_login.png';
+	$size = getimagesize( get_template_directory() . $path );
+	if ( $size ) :
+		echo '<style type="text/css">
+			.login h1 a  { 
+				background-image: url(' . get_bloginfo('template_directory') . $path .') !important; 
+				background-size: ' . $size[0] . 'px ' . $size[1] . 'px ;
+				height: ' . $size[1] . 'px; 
+			}
+			
+			#wp-social-login-connect-options a {
+				text-decoration: none;
+			}
+		</style>';
+	endif;
+}
+add_action( 'login_head', 'custom_login_logo' );
 ?>

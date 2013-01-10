@@ -11,7 +11,7 @@
  * @package Studium Generale 2013
  * @since Studium Generale 2013 1.0
  */
-
+$do_404_results = false;
 get_header(); ?>
 
 		<div id="primary" class="content-area eightcol">
@@ -38,7 +38,10 @@ get_header(); ?>
 
 			<?php else : ?>
 
-				<?php get_template_part( 'no-results', 'index' ); ?>
+				<?php 
+				get_template_part( 'no-results', 'index' ); 
+				$do_404_results = true;
+				?>
 
 			<?php endif; ?>
 
@@ -46,4 +49,5 @@ get_header(); ?>
 		</div><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
+<?php if ( !empty( $do_404_results ) ) get_sider_bar( '404' ); ?>
 <?php get_footer(); ?>
