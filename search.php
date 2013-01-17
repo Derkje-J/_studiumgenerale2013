@@ -39,5 +39,5 @@ get_header(); ?>
 		</section><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
-<?php get_sidebar('404'); ?>
+<?php get_bottombar( '404' ); ?>
 <?php get_footer(); ?>

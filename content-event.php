@@ -15,8 +15,8 @@ if (!defined("SG_EVENTS_VERSION")) {
 
 $meta_data = get_post_custom(get_the_ID());
 $location = get_event_location();
-$meta_extra = isset( $meta_data["sg_event_extra"] ) ? unserialize($meta_data["sg_event_extra"][0]) : array();
-$show_header = isset( $meta_data["sg_event_header"] ) && !( empty( $meta_data["sg_event_header"][0] ) );
+$meta_extra = isset( $meta_data["_sg_event_extra"] ) ? unserialize($meta_data["_sg_event_extra"][0]) : array();
+$show_header = isset( $meta_data["_sg_event_header"] ) && !( empty( $meta_data["_sg_event_header"][0] ) );
  
  ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="ninecol last">

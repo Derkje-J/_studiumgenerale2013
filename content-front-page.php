@@ -17,7 +17,7 @@
 			echo "<p>".__("SG_EVENTS_VERSION is not defined. Please enable the events plugin.", "sg")."</p>";
 		else if (!class_exists("SG_EventShortcodes"))
 			echo "<p>".__("class SG_EventShortcodes is not defined. Please enable the events plugin.", "sg")."</p>";
-		else {
+		else {			
 			$shortcodes = new SG_EventShortcodes();
 			echo $shortcodes->event_full(
 				array(

@@ -24,6 +24,6 @@ get_header(); ?>
 
     <!-- <hr class="row"> -->
 
-	<?php get_sidebar( 'front' ); ?>
+	<?php get_bottombar( 'front' ); ?>
     
 <?php get_footer(); ?>

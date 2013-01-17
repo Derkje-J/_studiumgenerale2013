@@ -191,6 +191,7 @@ function sg2013_scripts() {
 	 * Adds JavaScript for handling the navigation menu hide-and-show behavior.
 	 */
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'respond', get_template_directory_uri() . '/js/respond.src.js', array(), '1.1.0' );
 
 	/*
 	 * Adds JavaScript to pages with the comment form to support
@@ -435,6 +436,36 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
+ * Load bottombar template.
+ *
+ * Includes the bottombar template for a theme or if a name is specified then a
+ * specialised bottombar will be included.
+ *
+ * For the parameter, if the file is called "bottombar-special.php" then specify
+ * "special".
+ *
+ * @uses locate_template()
+ * @since 1.5.0
+ * @uses do_action() Calls 'get_bottombar' action.
+ *
+ * @param string $name The name of the specialised sidebar.
+ */
+function get_bottombar( $name = null ) {
+	do_action( 'get_bottombar', $name );
+
+	$templates = array();
+	if ( isset($name) )
+			$templates[] = "bottombar-{$name}.php";
+
+	$templates[] = 'sidebar.php';
+
+	// Backward compat code will be removed in a future release
+	if ('' == locate_template($templates, true))
+			load_template( ABSPATH . WPINC . '/theme-compat/sidebar.php');
+}
+
+
+/**
  * Adds a custom login logo to the login page!
  */
 function custom_login_logo() {
@@ -442,6 +473,23 @@ function custom_login_logo() {
 	$size = getimagesize( get_template_directory() . $path );
 	if ( $size ) :
 		echo '<style type="text/css">
+			body.login {
+				background-color: #ddd;
+			}
+			
+			.login #nav, .login #backtoblog {
+				text-shadow: 0 1px 0 #bbb;
+			}
+			
+			.login form {
+				box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 1);	
+				border: 1px solid #C5C5C5;
+			}
+			
+			div.updated, .login .message {
+				box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 1);
+			}
+			
 			.login h1 a  { 
 				background-image: url(' . get_bloginfo('template_directory') . $path .') !important; 
 				background-size: ' . $size[0] . 'px ' . $size[1] . 'px ;
@@ -455,4 +503,5 @@ function custom_login_logo() {
 	endif;
 }
 add_action( 'login_head', 'custom_login_logo' );
+
 ?>

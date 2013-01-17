@@ -178,7 +178,7 @@ h3 {
 h4 {
   font-size: 16px;
   font-size: 1rem;
-  font-weight: italic;
+  font-style: italic;
 }
 
 /* line 40, scss/mixin/_global.scss */
@@ -200,13 +200,13 @@ hr {
   background-color: #cccccc;
   border: 0;
   height: 1px;
-  margin-botton: 16px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
 /* line 60, scss/mixin/_global.scss */
 hgroup {
-  margin-botton: 16px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
@@ -221,7 +221,7 @@ p {
 
 /* line 77, scss/mixin/_global.scss */
 ul, ol {
-  margin: 0 0 16px, 32px;
+  margin: 0 0 16px 32px;
   margin: 0 0 1rem 2rem;
 }
 
@@ -271,7 +271,7 @@ blockquote {
 
 /* line 116, scss/mixin/_global.scss */
 address {
-  margin: 0 o 16px;
+  margin: 0 0 16px;
   margin: 0 0 1rem;
 }
 
@@ -527,8 +527,8 @@ a:hover, a:focus, a:active {
   width: 100%;
   max-width: 1140px;
   max-width: 71.25rem;
-  min-width: 755px;
-  min-width: 47.1875rem;
+  min-width: 691px;
+  min-width: 43.1875rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 5px;
@@ -1005,8 +1005,9 @@ hr-footer {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2;
+  text-shadow: 1px 1px 1px #bbb;
 }
-/* line 28, scss/sections/_header.scss */
+/* line 29, scss/sections/_header.scss */
 .site-header h2 {
   font-weight: normal;
   font-size: 13px;
@@ -1015,7 +1016,7 @@ hr-footer {
   color: #777;
 }
 
-/* line 37, scss/sections/_header.scss */
+/* line 38, scss/sections/_header.scss */
 .header-image {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -1073,9 +1074,12 @@ hr-footer {
 /* line 46, scss/sections/_menu.scss */
 .main-navigation ul.nav-menu.toggled-on, .menu-toggle {
   display: inline-block;
+  zoom: 1;
+  /* IE 7 Hack starts here*/
+  *display: inline;
 }
 
-/* line 50, scss/sections/_menu.scss */
+/* line 52, scss/sections/_menu.scss */
 .site-header h1.menu-toggle {
   font-size: 16px;
   font-size: 1rem;
@@ -1084,7 +1088,7 @@ hr-footer {
   margin-right: 20px;
 }
 
-/* line 59, scss/sections/_menu.scss */
+/* line 61, scss/sections/_menu.scss */
 .main-navigation ul.nav-menu {
   list-style: none;
   margin: 0;
@@ -1097,7 +1101,7 @@ hr-footer {
   	background-color: transparant;
   }*/
 }
-/* line 63, scss/sections/_menu.scss */
+/* line 65, scss/sections/_menu.scss */
 .main-navigation ul.nav-menu ul {
   list-style: none;
   margin: 0;
@@ -1105,7 +1109,7 @@ hr-footer {
 
 /* Minimum width of 768 pixels. */
 @media screen and (min-width: 768px) {
-  /* line 84, scss/sections/_menu.scss */
+  /* line 86, scss/sections/_menu.scss */
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     border-bottom: 1px solid #ededed;
@@ -1113,27 +1117,33 @@ hr-footer {
     display: inline-block !important;
     text-align: left;
     width: 100%;
+    zoom: 1;
+    /* IE 7 Hack starts here*/
+    *display: inline !important;
   }
 
-  /* line 92, scss/sections/_menu.scss */
+  /* line 97, scss/sections/_menu.scss */
   .main-navigation {
     border-top: 3px solid #F5F5F5;
     border-bottom: 3px solid #F5F5F5;
   }
-  /* line 97, scss/sections/_menu.scss */
+  /* line 102, scss/sections/_menu.scss */
   .main-navigation ul {
     margin: 0;
     text-indent: 0;
   }
-  /* line 110, scss/sections/_menu.scss */
+  /* line 115, scss/sections/_menu.scss */
   .main-navigation li {
     margin: 0 40px 0 0;
     margin: 0 2.5rem 0 0;
     position: relative;
     display: inline-block;
     text-decoration: none;
+    zoom: 1;
+    /* IE 7 Hack starts here*/
+    *display: inline;
   }
-  /* line 117, scss/sections/_menu.scss */
+  /* line 122, scss/sections/_menu.scss */
   .main-navigation li a {
     display: inline-block;
     text-decoration: none;
@@ -1141,12 +1151,15 @@ hr-footer {
     color: #6a6a6a;
     line-height: 3.692307692;
     text-transform: uppercase;
+    zoom: 1;
+    /* IE 7 Hack starts here*/
+    *display: inline;
   }
-  /* line 125, scss/sections/_menu.scss */
+  /* line 130, scss/sections/_menu.scss */
   .main-navigation li a:hover {
     color: #000;
   }
-  /* line 130, scss/sections/_menu.scss */
+  /* line 138, scss/sections/_menu.scss */
   .main-navigation li ul {
     display: none;
     margin: 0;
@@ -1154,19 +1167,19 @@ hr-footer {
     position: absolute;
     top: 100%;
   }
-  /* line 137, scss/sections/_menu.scss */
+  /* line 145, scss/sections/_menu.scss */
   .main-navigation li ul li {
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 0;
   }
-  /* line 144, scss/sections/_menu.scss */
+  /* line 152, scss/sections/_menu.scss */
   .main-navigation li ul ul {
     top: 0;
     left: 100%;
   }
-  /* line 149, scss/sections/_menu.scss */
+  /* line 157, scss/sections/_menu.scss */
   .main-navigation li ul li a {
     background: #efefef;
     border-bottom: 1px solid #ededed;
@@ -1179,18 +1192,24 @@ hr-footer {
     width: 180px;
     width: 11.25rem;
   }
-  /* line 161, scss/sections/_menu.scss */
+  /* line 169, scss/sections/_menu.scss */
   .main-navigation li ul li a:hover {
     background: #e3e3e3;
     color: #444;
   }
-  /* line 168, scss/sections/_menu.scss */
+  /* line 176, scss/sections/_menu.scss */
   .main-navigation li:hover > ul {
     border-left: 0;
     display: block;
+    /* IE 7 Hack starts here*/
+    *left: -20px;
+  }
+  /* line 182, scss/sections/_menu.scss */
+  .main-navigation li:hover > ul ul {
+    *left: 0px;
   }
 
-  /* line 178, scss/sections/_menu.scss */
+  /* line 195, scss/sections/_menu.scss */
   .main-navigation .current-menu-item > a,
   .main-navigation .current-menu-ancestor > a,
   .main-navigation .current_page_item > a,
@@ -1199,7 +1218,7 @@ hr-footer {
     font-weight: bold;
   }
 
-  /* line 182, scss/sections/_menu.scss */
+  /* line 199, scss/sections/_menu.scss */
   .menu-toggle {
     display: none;
   }
@@ -1237,24 +1256,30 @@ hr-footer {
 }
 
 /* line 36, scss/sections/_navigation.scss */
+#nav-below {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+/* line 41, scss/sections/_navigation.scss */
 .paged #nav-above {
   display: block;
 }
 
-/* line 40, scss/sections/_navigation.scss */
+/* line 45, scss/sections/_navigation.scss */
 .nav-previous, .previous-image {
   float: left;
   width: 50%;
 }
 
-/* line 45, scss/sections/_navigation.scss */
+/* line 50, scss/sections/_navigation.scss */
 .nav-next, .next-image {
   float: right;
   text-align: right;
   width: 50%;
 }
 
-/* line 51, scss/sections/_navigation.scss */
+/* line 56, scss/sections/_navigation.scss */
 .nav-single + .comments-area, #comment-nav-above {
   margin: 48px 0;
   margin: 3rem 0;
@@ -1596,7 +1621,7 @@ object {
   background-color: transparent;
 }
 
-/* line 87, scss/sections/_widgets.scss */
+/* line 88, scss/sections/_widgets.scss */
 #tertiary, #secondary.as-tertiary {
   border: 1px solid #ddd;
   background-color: #eee;
@@ -1607,7 +1632,7 @@ object {
 }
 
 @media handheld, only screen and (min-width: 767px) {
-  /* line 100, scss/sections/_widgets.scss */
+  /* line 101, scss/sections/_widgets.scss */
   #tertiary, #secondary.as-tertiary {
     padding: 24px 0 24px 24px;
     padding: 1.5rem 0 1.5rem 1.5rem;
@@ -1641,6 +1666,33 @@ footer.entry-meta {
   border: 2px double #EEE;
   padding: 8px;
   padding: 0.5rem;
+}
+
+/* line 29, scss/sections/_footer.scss */
+#partners ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 33, scss/sections/_footer.scss */
+#partners ul li {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  padding: 4px;
+  padding: .25rem;
+  zoom: 1;
+  *display: inline;
+}
+/* line 43, scss/sections/_footer.scss */
+#partners ul li a img {
+  height: 100px;
+  height: 6.25rem;
+}
+
+/* line 55, scss/sections/_footer.scss */
+.built-info {
+  color: #ccc;
+  float: right;
 }
 
 /* End all sections */

@@ -17,54 +17,64 @@
             	<h3 class="widget-title"><?php _e("Recordings of recent events", "sg2013"); ?></h3>
 	            <ul class="recordings">
             	<?php
-					$args = array(
-						'post_type' => 'sg_event',
-						'post_status' => 'publish',
+				
+					if ( false === ( $events_html = get_transient( 'sidebar_sg_recordings_html' ) ) ) {
+						$args = array(
+							'post_type' => 'sg_event',
+							'post_status' => 'publish',
+	
+							'meta_key' => '_sg_event_startdate',
+							'orderby' => 'meta_value_num',
+							'order' => 'DESC',
+							
+							'nopaging' => true,
+							'posts_per_page' => -1,
+							
+							/*'meta_query' => array(
+								array(
+									'key' => 'sg_recording_url',
+									'value' => '0',
+									'compare' => '>',
+									'type' => 'NUMERIC'
+								)
+							)*/
+						);
+						
+						$events = new WP_Query($args);
+						
+						$events_html = '';
+						$count = 0;
+						$max = 5; // change for more/less
 
-						'meta_key' => 'sg_event_startdate',
-						'orderby' => 'meta_value_num',
-						'order' => 'DESC',
-						
-						'nopaging' => true,
-						'posts_per_page' => -1,
-						
-						/*'meta_query' => array(
-							array(
-								'key' => 'sg_recording_url',
-								'value' => '0',
-								'compare' => '>',
-								'type' => 'NUMERIC'
-							)
-						)*/
-					);
-					
-					$max = 5; // change for more/less
-					$count = 0;
-					$events = new WP_Query($args);
-					
-					while ( $events->have_posts() ) :
-						$events->the_post();
-						$custom = get_post_meta(get_the_ID(), 'sg_recording_url');
-						
-						if (!isset($custom) || !isset($custom[0]) || !strlen($custom[0]))
-							continue;
+						while ( $events->have_posts() ) :
+							$events->the_post();
+							$custom = get_post_meta(get_the_ID(), '_sg_recording_url');
 							
-						$count++;
+							if (!isset($custom) || !isset($custom[0]) || !strlen($custom[0]))
+								continue;
+								
+							$count++;
+								
+							$events_html .= '<li class="recording">
+								<a href="' .get_permalink(get_the_ID()).'#recording-'.get_the_ID().'" title="'.__("See this recording.", "sg-event").'">'.get_the_title() . '</a>
+							</li>';
 							
-						echo '<li class="recording">
-							<a href="' .get_permalink(get_the_ID()).'#recording-'.get_the_ID().'" title="'.__("See this recording.", "sg-event").'">'.get_the_title() . '</a>
-						</li>';
+							if ($max <= $count)
+								break;
+						endwhile;
 						
-						if ($max <= $count)
-							break;
-					endwhile;
+						if (!$count)
+							$events_html.= '<li class="no-recording">'.__("No recordings found.", "sg-event").'</li>';
+						
+						// Restore original Query & Post Data
+						wp_reset_query();
+						wp_reset_postdata();
+						
+						// Set the Transient cache to expire every two hours
+						set_transient( 'sidebar_sg_recordings_html', $events_html, 60 * 60 * 2 );
+					}
 					
-					if (!$count)
-						echo '<li class="no-recording">'.__("No recordings found.", "sg-event").'</li>';
-					
-					// Restore original Query & Post Data
-					wp_reset_query();
-					wp_reset_postdata();
+					echo $events_html;
 				?>
             	</ul>
             </aside>

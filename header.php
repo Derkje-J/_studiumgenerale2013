@@ -46,9 +46,9 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header row" role="banner">
-    	<?php if (class_exists("SG_LanguageSwitcher")) :
-			$that = new SG_LanguageSwitcher(); ?>
-		
+    	<?php if (class_exists("DJ_LanguageSwitcher")) : 
+			$that = new DJ_LanguageSwitcher();
+		?>
     	<div style="font-size: 11px; font-size: 0.6875rem; float:right;">
         	<a href="<?php echo $that->get_url('nl_NL');?>" title="Bekijk deze website in het Nederlands">NL</a> | <a href="<?php echo $that->get_url('en_EN');?>" title="See this website in English">EN</a>
         </div>

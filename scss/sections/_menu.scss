@@ -45,6 +45,8 @@
 
 .main-navigation ul.nav-menu.toggled-on, .menu-toggle {
 	display: inline-block;
+	zoom:1; /* IE 7 Hack starts here*/
+	*display:inline;
 }
 
 .site-header h1.menu-toggle {
@@ -87,6 +89,9 @@
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
+		
+		zoom:1; /* IE 7 Hack starts here*/
+		*display:inline !important;
 	}
 	
 	.main-navigation {	
@@ -125,6 +130,9 @@
 				&:hover {
 					color: #000;
 				}
+				
+				zoom:1; /* IE 7 Hack starts here*/
+				*display:inline;
 			}
 			
 			ul {
@@ -168,7 +176,16 @@
 			&:hover > ul {
 				border-left: 0;
 				display: block;
+				/* IE 7 Hack starts here*/
+				*left:-20px;
+				
+				ul {
+					*left:0px;
+				}
 			}
+			
+			zoom:1; /* IE 7 Hack starts here*/
+			*display:inline;
 		}
 	}
 

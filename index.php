@@ -49,5 +49,5 @@ get_header(); ?>
 		</div><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
-<?php if ( !empty( $do_404_results ) ) get_sider_bar( '404' ); ?>
+<?php if ( !empty( $do_404_results ) ) get_bottombar( '404' ); ?>
 <?php get_footer(); ?>

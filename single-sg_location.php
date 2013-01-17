@@ -37,5 +37,7 @@ get_header(); ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
+        
+         <?php get_bottombar( 'location' ); ?>
 
 <?php get_footer(); ?>

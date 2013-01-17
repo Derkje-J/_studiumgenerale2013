@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Studium Generale 2013 1.1-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/studiumgenerale2013\n"
-"POT-Creation-Date: 2013-01-07 08:38:56+00:00\n"
-"PO-Revision-Date: 2013-01-07 09:40+0100\n"
+"POT-Creation-Date: 2013-01-11 19:10:50+00:00\n"
+"PO-Revision-Date: 2013-01-11 20:13+0100\n"
 "Last-Translator: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
 "Language-Team: Derk-Jan Karrenbeld <derk-jan@karrenbeld.info>\n"
 "Language: nl\n"
@@ -27,40 +27,40 @@ msgstr ""
 "Het lijkt erop dat er niets is gevonden. Probeer anders een van de links "
 "hieronder of de zoekfunctie?"
 
-#: 404.php:27
+#: 404.php:32
 msgid "Most Used Categories"
 msgstr "Meest Gebruikte Categoriën"
 
 #. translators: %1$s: smilie
-#: 404.php:35
+#: 404.php:41
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Probeer het maandarchief. %1$s"
 
-#: archive-sg_event.php:22 archive.php:22 taxonomy-sg_eventcategory.php:22
+#: archive-sg_event.php:22 archive.php:23 taxonomy-sg_eventcategory.php:22
 msgid "Category Archives: %s"
 msgstr "Categoriearchief: %s"
 
-#: archive-sg_event.php:25 archive.php:25 taxonomy-sg_eventcategory.php:25
+#: archive-sg_event.php:25 archive.php:26 taxonomy-sg_eventcategory.php:25
 msgid "Tag Archives: %s"
 msgstr "Tagarchief"
 
-#: archive-sg_event.php:32 archive.php:32 taxonomy-sg_eventcategory.php:32
+#: archive-sg_event.php:32 archive.php:33 taxonomy-sg_eventcategory.php:32
 msgid "Author Archives: %s"
 msgstr "Auteursarchief: %s"
 
-#: archive-sg_event.php:40 archive.php:40 taxonomy-sg_eventcategory.php:40
+#: archive-sg_event.php:40 archive.php:41 taxonomy-sg_eventcategory.php:40
 msgid "Daily Archives: %s"
 msgstr "Dagarchief: %s"
 
-#: archive-sg_event.php:43 archive.php:43 taxonomy-sg_eventcategory.php:43
+#: archive-sg_event.php:43 archive.php:44 taxonomy-sg_eventcategory.php:43
 msgid "Monthly Archives: %s"
 msgstr "Maandarchief: %s"
 
-#: archive-sg_event.php:46 archive.php:46 taxonomy-sg_eventcategory.php:46
+#: archive-sg_event.php:46 archive.php:47 taxonomy-sg_eventcategory.php:46
 msgid "Yearly Archives: %s"
 msgstr "Jaararchief: %s"
 
-#: archive-sg_event.php:49 archive.php:49 sidebar.php:18
+#: archive-sg_event.php:49 archive.php:50 sidebar.php:18
 #: taxonomy-sg_eventcategory.php:49
 msgid "Archives"
 msgstr "Archief"
@@ -93,8 +93,8 @@ msgstr "Reacties zijn gesloten."
 msgid "SG_EVENTS_VERSION is not defined. Please enable the events plugin."
 msgstr "SG_EVENTS_VERSIE is niet gedefiniëerd. Activeer de events plugin."
 
-#: content-event-bar.php:21 content-event-li.php:34 content-event.php:28
-#: content-location-li.php:28 content-location.php:20 content.php:10
+#: content-event-bar.php:21 content-event-li.php:45 content-event.php:26
+#: content-location-li.php:40 content-location.php:20 content.php:10
 msgid "Permalink to %s"
 msgstr "Permanente link naar %s"
 
@@ -119,13 +119,13 @@ msgid "No speaker information"
 msgstr "Geen spreker informatie"
 
 #. translators: used between list items, there is a space after the comma
-#: content-event.php:49 content-event.php:52 content-location.php:38
+#: content-event.php:61 content-event.php:64 content-location.php:38
 #: content-location.php:41 content-single.php:25 content-single.php:28
 #: content.php:34 content.php:44
 msgid ", "
 msgstr ", "
 
-#: content-event.php:57 content-location.php:46 content-single.php:33
+#: content-event.php:69 content-location.php:46 content-single.php:33
 msgid ""
 "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
 "to %4$s\" rel=\"bookmark\">permalink</a>."
@@ -133,7 +133,7 @@ msgstr ""
 "Dit item is getagged met %2$s. Voeg een bladwijzer toe voor de <a href=\"%3$s"
 "\" title=\"Permanente link naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:59 content-location.php:48 content-single.php:35
+#: content-event.php:71 content-location.php:48 content-single.php:35
 msgid ""
 "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
 "\">permalink</a>."
@@ -141,7 +141,7 @@ msgstr ""
 "Voeg een bladwijzer toe voor de <a href=\"%3$s\" title=\"Permanente link "
 "naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:65 content-location.php:54 content-single.php:41
+#: content-event.php:77 content-location.php:54 content-single.php:41
 msgid ""
 "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
 "title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
@@ -150,7 +150,7 @@ msgstr ""
 "voor de <a href=\"%3$s\" title=\"Permanente link naar %4$s\" rel=\"bookmark"
 "\">permanente link</a>."
 
-#: content-event.php:67 content-location.php:56 content-single.php:43
+#: content-event.php:79 content-location.php:56 content-single.php:43
 msgid ""
 "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
 "\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
@@ -158,7 +158,7 @@ msgstr ""
 "Dit item is geplaatst in %1$s. Voeg een bladwijzer toe voor de <a href=\"%3$s"
 "\" title=\"Permanente link naar %4$s\" rel=\"bookmark\">permanente link</a>."
 
-#: content-event.php:81 content-location.php:70 content-page.php:18
+#: content-event.php:93 content-location.php:70 content-page.php:18
 #: content-single.php:57 content.php:59 image.php:34 image.php:100
 msgid "Edit"
 msgstr "Bewerk"
@@ -260,11 +260,39 @@ msgstr "Tweede voorpagina widget gebied"
 msgid "Third Front Page Widget Area"
 msgstr "Derde voorpagina widget gebied"
 
+#: functions.php:129
+msgid "Event Footer Widget A"
+msgstr "Evenement Footer Widget A"
+
+#: functions.php:131 functions.php:141
+msgid "Appears on event pages below the content"
+msgstr "Weergegeven op evenement pagina's onder de content"
+
+#: functions.php:139
+msgid "Event Footer Widget B"
+msgstr "Evenement Footer Widget B"
+
+#: functions.php:149
+msgid "First 404 Widget Area"
+msgstr "Eerste 404 Widget Gebied"
+
+#: functions.php:151 functions.php:161 functions.php:171
+msgid "Appears when displaying the 404 error code page"
+msgstr "Weergeven wanneer de 404 fout code pagina wordt weergegeven"
+
+#: functions.php:159
+msgid "Second 404 Widget Area"
+msgstr "Tweede 404 Widget Gebied"
+
+#: functions.php:169
+msgid "Third 404 Widget Area"
+msgstr "Derde 404 Widget Gebied"
+
 #. translators: If there are characters in your language that are not
 #. supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:183
+#: functions.php:233
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
@@ -273,12 +301,12 @@ msgstr "on"
 #. your language, translate
 #. this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your
 #. own language.
-#: functions.php:188
+#: functions.php:238
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
 
-#: functions.php:383
+#: functions.php:433
 msgid "[more]"
 msgstr "[meer]"
 
@@ -286,11 +314,11 @@ msgstr "[meer]"
 msgid "Page %s"
 msgstr "Pagina %s"
 
-#: header.php:55
+#: header.php:62
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:56
+#: header.php:63
 msgid "Skip to content"
 msgstr "Ga direct naar de content"
 
