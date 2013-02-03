@@ -12,7 +12,12 @@ if (!defined("SG_EVENTS_VERSION")) {
 }
 
 $location_data = get_location_details_data();
-if (isset($location_data)) {
+if (isset($location_data["url"]) && strlen(strval($location_data["url"])))
+	$location_url = '<a href="'.$location_data["url"].'" title="'.__("Visit location website", "sg2013").'">'.__("Website", "sg2013").'</a>';
+
+/*
+$location_data = get_location_details_data();
+if ( isset( $location_data ) ) {
 	$location_details = $location_data["street"] . ' ' . $location_data["number"] . '<br/>'.
 	'<em>' . $location_data["postal"] . ' ' . $location_data["city"] . '</em><br>'.
 	'<a href="'.get_location_map_url().'"><img src="'.get_location_map_url().'" style="background: url(\'http://placehold.it/800x450.png&text=map\'"/></a>'; 
@@ -21,7 +26,7 @@ if (isset($location_data)) {
 	}
 } else {
 	$location_details =  _x('No details', 'sg2013' , 'location');	
-}	
+}*/	
 ?>
 
 <h2>Details</h2>
@@ -29,6 +34,16 @@ if (isset($location_data)) {
 <h3 class="location-url"><?php echo $location_url; ?></h3>
 <?php endif; ?>
 
-<p class="location-map">
-    <?php echo $location_details; ?><br>
-</p>
+<div class="location-map"><?php
+    if ( isset( $location_data ) ) {
+    ?>
+        <div class="event-location" style="margin-top:1rem">
+            <div class="location-map">
+                <?php the_location_details(); ?><br> 
+                <a itemprop="map" href="<?php echo get_location_map_url(); ?>"><img src="<?php echo get_location_map_url(); ?>" style="background: url('http://placehold.it/800x450.png&text=map'"/></a>
+            </div>
+        </div>
+    <?php
+    }
+	?><br>
+</div>

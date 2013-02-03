@@ -8,36 +8,38 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-                        
-				<div class="ninecol">
-					<?php sg2013_content_nav( 'nav-above' ); ?>
+		<div itemscope itemtype="http://schema.org/Event">
+            <div id="primary" class="content-area">
+                <div id="content" class="site-content" role="main">
     
-                    <?php get_template_part( 'content', 'event' ); ?>
-                </div>
-                
-                <section class="threecol last">
-					<?php get_template_part( 'content', 'event-bar'); ?>
-                </section>
-              	
-                <div class="ninecol">
-					<?php sg2013_content_nav( 'nav-below' ); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                            
+                    <div class="ninecol">
+                        <?php sg2013_content_nav( 'nav-above' ); ?>
         
-					<?php
-                        // If comments are open or we have at least one comment, load up the comment template
-                        if ( comments_open() || '0' != get_comments_number() )
-                            comments_template( '', true );
-                    ?>
-                </div>
-
-			<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content .site-content -->
-		</div><!-- #primary .content-area -->
-        
-        <?php get_bottombar( 'event' ); ?>
+                        <?php get_template_part( 'content', 'event' ); ?>
+                    </div>
+                    
+                    <section class="threecol last">
+                        <?php get_template_part( 'content', 'event-bar'); ?>
+                    </section>
+                    
+                    <div class="ninecol">
+                        <?php sg2013_content_nav( 'nav-below' ); ?>
+            
+                        <?php
+                            // If comments are open or we have at least one comment, load up the comment template
+                            if ( comments_open() || '0' != get_comments_number() )
+                                comments_template( '', true );
+                        ?>
+                    </div>
+    
+                <?php endwhile; // end of the loop. ?>
+    
+                </div><!-- #content .site-content -->
+            </div><!-- #primary .content-area -->
+            
+            <?php get_bottombar( 'event' ); ?>
+        </div>
 
 <?php get_footer(); ?>

@@ -19,12 +19,19 @@
 			echo "<p>".__("class SG_EventShortcodes is not defined. Please enable the events plugin.", "sg")."</p>";
 		else {			
 			$shortcodes = new SG_EventShortcodes();
-			echo $shortcodes->event_full(
+			$events = $shortcodes->event_full(
 				array(
 					"limit" => "4", // change to display more or less
 					"fullview" => true,
 				)
-			); 
+			);
+			if ( empty ( $events ) ) :
+				echo "<ul class='events'>";
+					echo "<li>".__( 'No upcoming events found.', 'sg2013' )."</li>";
+				echo "</ul>";
+			else :
+				echo $events;
+			endif; 
 		}
 		?>
 	</div><!-- .entry-content -->

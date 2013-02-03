@@ -14,6 +14,7 @@
 			<?php sg2013_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
+        <time class="updated" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"/>
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
